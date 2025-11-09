@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display";
+  --logo-color: #1b1f2d;
+  --text-generic-color: #333333;
+  --title-generic-color: #181818;
+  --blue-generic-color: #2f80ed;
+  --input-background-generic-color: #f2f2f2;
+  --input-generic-color-text: #4f4f4f;
+  --alarm-background-color: #fcefca;
+  --white-color-text: #ffffff;
+  --icons-generic-inputs-color: #828282;
+}
+
+/* ----------------- GENERIC STYLES ------------------ */
+
+/* ----- GENERIC STRUCTURE PAGE ---- */
+
+.container {
+  width: clamp(320px, 100%, 1440px);
+}
+
+.principal-paddings {
+  padding: 0 40px;
+}
+
+/* -------- TYPES OF FLEX STYLES --------- */
+
+.flex {
+  display: flex;
+}
+
+.normal-gap {
+  gap: 20px;
+}
+
+.litte-gap {
+  gap: 10px;
+}
+
+.flex-generic-nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-generic-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* ---------- PADDINS GENERICS ----------- */
+
+.generic-little-top-padding {
+  padding-top: 10px;
+}
+
+.generic-middle-buttom-padding {
+  padding-bottom: 20px;
+}
+
+.quit-all-paddins {
+  padding: 0;
+}
+
+.put-all-middle-padding {
+  padding: 15px 20px;
+}
+
+/* -------- COLORS --------- */
+
+/* --- CONTENT COLOR ---  */
+
+.blue-color-generic {
+  color: var(--blue-generic-color);
+}
+
+.text-generic-color {
+  color: var(--text-generic-color);
+}
+
+.text-color-white {
+  color: var(--white-color-text);
+}
+
+.generic-color-inputs-text {
+  color: var(--input-generic-color-text);
+}
+
+.generic-icons-color-inputs {
+  color: var(--icons-generic-inputs-color);
+}
+
+/* --- BACKGROUND COLOR --- */
+
+.white-background-color {
+  background-color: var(--white-color-text);
+}
+
+.blue-generic-color {
+  background-color: var(--blue-generic-color);
+}
+
+.input-generic-background-color {
+  background-color: var(--input-background-generic-color);
+}
+
+.background-color-white {
+  background-color: var(--white-color-text);
+}
+
+
+/* ---------- FONTS SIZES --------- */
+
+.principal-title-size {
+  font-size: clamp(20px, 3vw, 50px);
+}
+
+.text-generic-size {
+  font-size: clamp(10px, 1.4vw, 26px)
+}
+
+/* ---- SPECIFIC TEXT STYLES ---- */
+
+.remove-underline {
+  text-decoration: none;
+}
+
+.bold-text {
+  font-weight: 500;
+}
+
+.aling-center {
+  text-align: center;
+}
+
+/* -------- STYLES LISTS -------- */
+
+.remove-point {
+  list-style: none;
+}
+
+/* ------- STYLES BUTTONS -------- */
+
+.normals-paddings-buttons {
+  padding: 10px 20px;
+}
+
+.buttons-borders {
+  border: 1px solid var(--blue-generic-color);
+}
+
+/* ---------- BORDERS ---------- */
+
+.generic-border-radius {
+  border-radius: 5px;
+}
+
+.quit-borders {
+  border: none;
+}
+
+/* ---------- LOGO STYLES ------------- */
+
+.icon-plane {
+  rotate: 50deg;
+}
+
+/* ------------ STYLES IMAGES ----------- */
+
+.general-properties-images {
+  background-size: cover;
+  background-position: center;
+}
+
+.darkness {
+  width: 100%;
+  height: 100%;
+  background-color: #3335;
+}
+
+/* ------------ POSITIONS ---------------*/
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.z-index-increase {
+  z-index: 1;
+}
+
+/* ------------ WIDTH STYLES ------------- */
+
+.total-width {
+  width: 100%;
+}
+
+.generic-little-max-width {
+  max-width: 100px;
+}
+
+.generic-middle-width {
+  max-width: 150px;
+}
+
+/* -------------- ESPECIFIC PAGE INDEX --------------- */
+
+
+.header-container-img {
+  background-image: url(img/header01.jpg);
+  height: clamp(30vh, 50vh, 70vh);
+}
+
+.header-form-container {
+  width: clamp(300px, 100%, 100%);
+}
