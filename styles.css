@@ -13,6 +13,10 @@ body {
   --icons-generic-inputs-color: #828282;
 }
 
+p {
+  margin: 0;
+}
+
 /* ------------------ GENERIC STYLES ------------------ */
 
 /* ----- GENERIC STRUCTURE PAGE ---- */
@@ -79,6 +83,10 @@ body {
   padding: 15px 20px;
 }
 
+.generic-separate-secions {
+  padding: 40px 0;
+}
+
 /* -------- COLORS --------- */
 
 /* --- CONTENT COLOR ---  */
@@ -121,6 +129,10 @@ body {
   background-color: var(--white-color-text);
 }
 
+.background-light-yellow {
+  background-color: var(--alarm-background-color);
+}
+
 .filter-background-dark {
   background-color: #0004;
 }
@@ -134,6 +146,10 @@ body {
 
 .text-generic-size {
   font-size: clamp(10px, 1.4vw, 26px)
+}
+
+.generic-icon-size {
+  font-size: 30px;
 }
 
 /* ---- SPECIFIC TEXT STYLES ---- */
@@ -258,7 +274,7 @@ body {
 }
 
 .container-header-text {
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .special-button-width {
