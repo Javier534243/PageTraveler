@@ -13,7 +13,7 @@ body {
   --icons-generic-inputs-color: #828282;
 }
 
-/* ----------------- GENERIC STYLES ------------------ */
+/* ------------------ GENERIC STYLES ------------------ */
 
 /* ----- GENERIC STRUCTURE PAGE ---- */
 
@@ -113,6 +113,10 @@ body {
   background-color: var(--white-color-text);
 }
 
+.filter-background-dark {
+  background-color: #3335;
+}
+
 
 /* ---------- FONTS SIZES --------- */
 
@@ -177,12 +181,6 @@ body {
   background-position: center;
 }
 
-.darkness {
-  width: 100%;
-  height: 100%;
-  background-color: #3335;
-}
-
 /* ------------ POSITIONS ---------------*/
 
 .position-relative {
@@ -211,6 +209,18 @@ body {
   max-width: 150px;
 }
 
+/* ----------- HEIGHT STYLES ------------- */
+
+.total-height {
+  height: 100%;
+}
+
+/* ------------ SHADOWS ----------------- */
+
+.basic-shadow {
+  box-shadow: 0 0 20px 2px #3333;
+}
+
 /* -------------- ESPECIFIC PAGE INDEX --------------- */
 
 
@@ -220,5 +230,6 @@ body {
 }
 
 .header-form-container {
-  width: clamp(300px, 100%, 100%);
+  min-width: 300px;
+  max-width: 100%;
 }
