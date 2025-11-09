@@ -31,6 +31,7 @@ body {
   display: flex;
 }
 
+
 .normal-gap {
   gap: 20px;
 }
@@ -209,6 +210,10 @@ body {
   max-width: 150px;
 }
 
+.fit-content-width {
+  width: fit-content;
+}
+
 /* ----------- HEIGHT STYLES ------------- */
 
 .total-height {
@@ -229,7 +234,6 @@ body {
   height: clamp(30vh, 50vh, 70vh);
 }
 
-.header-form-container {
-  min-width: 300px;
-  max-width: 100%;
+.display-none {
+  display: none;
 }
