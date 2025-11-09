@@ -13,10 +13,6 @@ body {
   --icons-generic-inputs-color: #828282;
 }
 
-p {
-  margin: 0;
-}
-
 /* ------------------ GENERIC STYLES ------------------ */
 
 /* ----- GENERIC STRUCTURE PAGE ---- */
@@ -84,7 +80,7 @@ p {
 }
 
 .generic-separate-secions {
-  padding: 40px 0;
+  padding-bottom: 40px;
 }
 
 /* -------- COLORS --------- */
@@ -262,6 +258,12 @@ p {
 
 .basic-shadow {
   box-shadow: 0 0 20px 2px #3333;
+}
+
+/* ----------- OUTLINE ------------- */
+
+.quit-outline {
+  outline: none;
 }
 
 /* -------------- ESPECIFIC PAGE INDEX --------------- */
