@@ -55,6 +55,12 @@ body {
   flex-wrap: wrap;
 }
 
+/* ----------- MARGINS GENERICS ---------- */
+
+.negative-margin-top {
+  margin-top: -40px;
+}
+
 /* ---------- PADDINS GENERICS ----------- */
 
 .generic-little-top-padding {
@@ -123,7 +129,7 @@ body {
 /* ---------- FONTS SIZES --------- */
 
 .principal-title-size {
-  font-size: clamp(20px, 3vw, 50px);
+  font-size: clamp(20px, 2.5vw, 36px);
 }
 
 .text-generic-size {
@@ -142,6 +148,10 @@ body {
 
 .aling-center {
   text-align: center;
+}
+
+.line-heigh-generic {
+  line-height: 1.5;
 }
 
 /* -------- STYLES LISTS -------- */
@@ -245,6 +255,10 @@ body {
   background-image: url(img/header01.jpg);
   height: 500px;
   background-position: 0 30%;
+}
+
+.container-header-text {
+  max-width: 500px;
 }
 
 .special-button-width {
