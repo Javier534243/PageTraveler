@@ -168,7 +168,7 @@ body {
 
 /* -------- STYLES LISTS -------- */
 
-.remove-point {
+.quit-point {
   list-style: none;
 }
 
@@ -236,6 +236,10 @@ body {
   width: 100%;
 }
 
+.total-max-width {
+  max-width: 100%;
+}
+
 .generic-little-max-width {
   max-width: 100px;
 }
@@ -252,6 +256,10 @@ body {
 
 .total-height {
   height: 100%;
+}
+
+.height-auto {
+  height: auto;
 }
 
 /* ------------ SHADOWS ----------------- */
