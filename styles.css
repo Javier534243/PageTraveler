@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   box-sizing: border-box;
   font-family: "SF Pro Display";
   --logo-color: #1b1f2d;
@@ -61,6 +60,14 @@ body {
   margin-top: -40px;
 }
 
+.little-margins-vertical {
+  margin: 10px 0;
+}
+
+.quit-all-margins {
+  margin: 0;
+}
+
 /* ---------- PADDINS GENERICS ----------- */
 
 .generic-little-top-padding {
@@ -93,6 +100,10 @@ body {
 
 .text-generic-color {
   color: var(--text-generic-color);
+}
+
+.title-generic-color {
+  color: var(--title-generic-color);
 }
 
 .text-color-white {
@@ -244,8 +255,16 @@ body {
   max-width: 100px;
 }
 
-.generic-middle-width {
+.generic-middle-max-width {
   max-width: 150px;
+}
+
+.big-max-width {
+  max-width: 300px;
+}
+
+.very-big-max-width {
+  max-width: 550px;
 }
 
 .fit-content-width {
@@ -262,6 +281,10 @@ body {
   height: auto;
 }
 
+.little-max-height {
+  max-height: 250px;
+}
+
 /* ------------ SHADOWS ----------------- */
 
 .basic-shadow {
@@ -274,6 +297,12 @@ body {
   outline: none;
 }
 
+/* ----------- ASPECT RATIO ------------- */
+
+.aspect-ratio-square {
+  aspect-ratio: 4 / 3;
+}
+
 /* -------------- ESPECIFIC PAGE INDEX --------------- */
 
 
@@ -281,10 +310,6 @@ body {
   background-image: url(img/header01.jpg);
   height: 500px;
   background-position: 0 30%;
-}
-
-.container-header-text {
-  max-width: 550px;
 }
 
 .special-button-width {
