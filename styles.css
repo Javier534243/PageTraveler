@@ -155,8 +155,16 @@ body {
   font-size: clamp(20px, 2.5vw, 36px);
 }
 
+.second-title-size {
+  font-size: clamp(16px, 2.2vw, 32px);
+}
+
+.third-title-size {
+  font-size: clamp(12px, 1.5vw, 22px);
+}
+
 .text-generic-size {
-  font-size: clamp(10px, 1.4vw, 26px)
+  font-size: clamp(10px, 1.2vw, 18px)
 }
 
 .generic-icon-size {
@@ -169,8 +177,12 @@ body {
   text-decoration: none;
 }
 
-.bold-text {
+.midle-bold-text {
   font-weight: 500;
+}
+
+.big-bold-text {
+  font-weight: 600;
 }
 
 .aling-center {
@@ -305,6 +317,10 @@ body {
   max-height: 250px;
 }
 
+.midle-max-height {
+  max-height: 400px;
+}
+
 /* ------------ SHADOWS ----------------- */
 
 .basic-shadow {
@@ -321,6 +337,18 @@ body {
 
 .aspect-ratio-square {
   aspect-ratio: 4 / 3;
+}
+
+/* ---------- OVERFLOW --------- */
+
+.over-flow-hidden {
+  overflow: hidden;
+}
+
+/* -------- TYPES OF DISPLAYS --------- */
+
+.display-block {
+  display: block;
 }
 
 /* -------------- ESPECIFIC PAGE INDEX --------------- */
