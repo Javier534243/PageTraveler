@@ -58,6 +58,10 @@ body {
   align-items: end;
 }
 
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
 /* ----------- MARGINS GENERICS ---------- */
 
 .negative-margin-top {
@@ -343,6 +347,10 @@ body {
   aspect-ratio: 3 / 2;
 }
 
+.aspect-ratio-rectangular-down {
+  aspect-ratio: 1 / 1;
+}
+
 /* ---------- OVERFLOW --------- */
 
 .over-flow-hidden {
@@ -353,6 +361,12 @@ body {
 
 .display-block {
   display: block;
+}
+
+/* ---------- STYLES ROTATE ------------ */
+
+.rotate-reverse {
+  transform: rotate(180deg);
 }
 
 /* -------------- ESPECIFIC PAGE INDEX --------------- */
@@ -370,4 +384,9 @@ body {
 
 .display-none {
   display: none;
+}
+
+.baner-section {
+  background-image: url(img/background-image-baner-01.jpg);
+  height: 400px;
 }
