@@ -339,6 +339,10 @@ body {
   aspect-ratio: 4 / 3;
 }
 
+.aspect-ratio-rectangular {
+  aspect-ratio: 3 / 2;
+}
+
 /* ---------- OVERFLOW --------- */
 
 .over-flow-hidden {
