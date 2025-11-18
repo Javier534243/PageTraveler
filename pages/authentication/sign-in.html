@@ -30,38 +30,37 @@
           <label class="flex litte-gap flex-direction-column aling-left title-generic-color" for="email"
             >Email address
             <div class="input-generic-background-color input-generic-background-color put-all-middle-padding generic-border-radius">
-              <input id="email" type="email" class="total-width input-generic-background-color quit-borders quit-outline" />
+              <input id="email" type="email" class="total-width input-generic-background-color quit-borders quit-outline" required/>
             </div>
           </label>
           <label class="aling-left title-generic-color" for="password">Password 
             <div class="flex little-top-margin aling-items-center normal-gap input-generic-background-color put-all-middle-padding generic-border-radius">
-              <input id="password" type="password" class="total-width input-generic-background-color quit-borders quit-outline" />
+              <input id="password" type="password" class="total-width input-generic-background-color quit-borders quit-outline" required/>
               <i class="fa-solid fa-eye"></i>
             </div>
           </label>
         </div>
         <div class="flex justify-content-space-between">
           <div>
-            <label class="flex flex-direction-row-reverse generic-color-inputs-text litte-gap" for="/index.html"
-              >Keep me signed in
-              <input class="scale-up" type="checkbox" />
+            <label class="flex flex-direction-row-reverse generic-color-inputs-text litte-gap" for="checkbox">Keep me signed in
+              <input id="checkbox" class="scale-up" type="checkbox" />
             </label>
           </div>
           <a
-            href="/pages/forgot-password.html"
+            href="/pages/authentication/forgot-password.html"
             class="remove-underline blue-color-generic"
             target="_blank"
             >Forgot password?</a
           >
         </div>
-        <button class="text-color-white blue-generic-color put-all-middle-padding generic-border-radius buttons-borders text-generic-size">Continue with email</button>
+        <button class="text-color-white blue-generic-color put-all-middle-padding generic-border-radius buttons-borders text-generic-size" type="submit">Continue with email</button>
         <div class="flex justify-content-space-between aling-items-center litte-gap">
           <hr class="total-width quit-borders height-1px border-top-gray-light generic-little-max-width input-generic-background-color little-margins-vertical">
           <span class="fit-content-width generic-color-inputs-text ">or use one of these options</span>
           <hr class="total-width quit-borders height-1px border-top-gray-light generic-little-max-width input-generic-background-color little-margins-vertical">
         </div>
         <button class="flex aling-items-center justify-content-center normal-gap normals-paddings-buttons generic-border-radius white-background-color text-generic-size text-generic-color midle-bold-text border-gray">
-          <img src="/img/img-google-register.png" alt="icono de google" class="max-width-icon">
+          <img src="/img/img-autentification/img-google-register.png" alt="icono de google" class="max-width-icon">
           Continue with Google
         </button>
         <button class="flex aling-items-center justify-content-center normal-gap normals-paddings-buttons generic-border-radius text-generic-size midle-bold-text background-facebook-color text-color-white quit-borders">
@@ -70,7 +69,7 @@
         </button>
         <div class="flex litte-gap justify-content-center text-generic-size generic-big-top-padding">
           <span class="generic-icons-color-inputs">Don’t have an account?</span>
-          <a href="/pages/register.html" class="remove-underline blue-color-generic">Register</a>
+          <a href="/pages/authentication/register.html" class="remove-underline blue-color-generic">Register</a>
         </div>
       </form>
     </main>

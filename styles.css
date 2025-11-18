@@ -330,6 +330,10 @@ body {
   border-radius: 5px;
 }
 
+.border-radius-circle {
+  border-radius: 50%;
+}
+
 .quit-borders {
   border: none;
 }
@@ -412,6 +416,10 @@ body {
 
 .max-width-icon {
   max-width: 30px;
+}
+
+.max-width-big-icon {
+  max-width: 50px;
 }
 
 .generic-little-max-width {
@@ -535,7 +543,7 @@ body {
 
 
 .header-container-img {
-  background-image: url(img/header01.jpg);
+  background-image: url(img/img-index/header01.jpg);
   height: 500px;
   background-position: 0 30%;
 }
@@ -549,6 +557,6 @@ body {
 }
 
 .baner-section {
-  background-image: url(img/background-image-baner-01.jpg);
+  background-image: url(img/img-index/background-image-baner-01.jpg);
   height: 320px;
 }
