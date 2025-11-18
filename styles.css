@@ -32,6 +32,10 @@ body {
   display: flex;
 }
 
+.big-gap {
+  gap: 40px;
+}
+
 .normal-gap {
   gap: 20px;
 }
@@ -90,6 +94,10 @@ body {
   margin: 10px 0;
 }
 
+.little-top-margin {
+  margin-top: 10px;
+}
+
 .quit-margin-top {
   margin-top: 0;
 }
@@ -146,6 +154,10 @@ body {
 
 .put-all-middle-big-padding {
   padding: 20px 25px;
+}
+
+.little-padding-bottom {
+  padding-bottom: 10px;
 }
 
 .generic-separate-secions {

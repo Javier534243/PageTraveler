@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sing in</title>
+    <title>Register</title>
     <link rel="stylesheet" href="/styles.css" />
     <script
       src="https://kit.fontawesome.com/b51cd60f76.js"
@@ -24,35 +24,14 @@
     <main
       class="flex justify-content-center aling-center flex-direction-column height-80vh margin-center sub-big-max-width "
     >
-      <h1>Sign in</h1>
+      <h1>Register</h1>
       <form action="/index.html" class="flex flex-direction-column normal-gap">
         <div class="flex flex-direction-column litte-gap">
-          <label class="flex litte-gap flex-direction-column aling-left title-generic-color" for="email"
-            >Email address
-            <div class="input-generic-background-color input-generic-background-color put-all-middle-padding generic-border-radius">
+          <label class="flex flex-direction-column aling-left title-generic-color" for="email">Email address
+            <div class="input-generic-background-color input-generic-background-color put-all-middle-padding generic-border-radius little-top-margin">
               <input id="email" type="email" class="total-width input-generic-background-color quit-borders quit-outline" />
             </div>
           </label>
-          <label class="aling-left title-generic-color" for="password">Password 
-            <div class="flex little-top-margin aling-items-center normal-gap input-generic-background-color put-all-middle-padding generic-border-radius">
-              <input id="password" type="password" class="total-width input-generic-background-color quit-borders quit-outline" />
-              <i class="fa-solid fa-eye"></i>
-            </div>
-          </label>
-        </div>
-        <div class="flex justify-content-space-between">
-          <div>
-            <label class="flex flex-direction-row-reverse generic-color-inputs-text litte-gap" for="/index.html"
-              >Keep me signed in
-              <input class="scale-up" type="checkbox" />
-            </label>
-          </div>
-          <a
-            href="#"
-            class="remove-underline blue-color-generic"
-            target="_blank"
-            >Forgot password?</a
-          >
         </div>
         <button class="text-color-white blue-generic-color put-all-middle-padding generic-border-radius buttons-borders text-generic-size">Continue with email</button>
         <div class="flex justify-content-space-between aling-items-center litte-gap">
@@ -69,8 +48,8 @@
           Continue with Facebook
         </button>
         <div class="flex litte-gap justify-content-center text-generic-size generic-big-top-padding">
-          <span class="generic-icons-color-inputs">Don’t have an account?</span>
-          <a href="/pages/register.html" class="remove-underline blue-color-generic">Register</a>
+          <span class="generic-icons-color-inputs">Already have an account?</span>
+          <a href="/pages/sign-in.html" class="remove-underline blue-color-generic">Sign in</a>
         </div>
       </form>
     </main>
