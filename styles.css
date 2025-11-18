@@ -152,6 +152,10 @@ body {
   background-color: #0004;
 }
 
+.filter-background-dark-linear {
+  background: linear-gradient(to left, #000a, transparent);
+}
+
 
 /* ---------- FONTS SIZES --------- */
 
@@ -191,6 +195,10 @@ body {
 
 .aling-center {
   text-align: center;
+}
+
+.aling-left {
+  text-align: left;
 }
 
 .line-heigh-generic {
@@ -283,6 +291,10 @@ body {
   width: 100%;
 }
 
+.total-half-width {
+  width: 50%;
+}
+
 .total-max-width {
   max-width: 100%;
 }
@@ -369,6 +381,10 @@ body {
   transform: rotate(180deg);
 }
 
+.rotate-right {
+  transform: rotate(-15deg);
+}
+
 /* -------------- ESPECIFIC PAGE INDEX --------------- */
 
 
@@ -388,5 +404,5 @@ body {
 
 .baner-section {
   background-image: url(img/background-image-baner-01.jpg);
-  height: 400px;
+  height: 320px;
 }
