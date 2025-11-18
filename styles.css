@@ -10,6 +10,7 @@ body {
   --alarm-background-color: #fcefca;
   --white-color-text: #ffffff;
   --icons-generic-inputs-color: #828282;
+  --footer-background-color: #EBEBEB;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -46,6 +47,10 @@ body {
   justify-content: center;
 }
 
+.justify-content-end {
+  justify-content: end;
+}
+
 .aling-items-center {
   align-items: center;
 }
@@ -70,6 +75,10 @@ body {
 
 .little-margins-vertical {
   margin: 10px 0;
+}
+
+.quit-margin-top {
+  margin-top: 0;
 }
 
 .quit-all-margins {
@@ -98,8 +107,20 @@ body {
   padding-bottom: 20px;
 }
 
+.midle-left-padding {
+  padding-left: 30px;
+}
+
 .very-big-left-padding {
   padding-left: 60px;
+}
+
+.very-big-right-padding {
+  padding-right: 60px;
+}
+
+.super-huge-right-padding {
+  padding-right: 120px;
 }
 
 .quit-all-paddins {
@@ -164,6 +185,10 @@ body {
   background-color: var(--alarm-background-color);
 }
 
+.background-footer-color {
+  background-color: var(--footer-background-color);
+}
+
 .filter-background-dark {
   background-color: #0004;
 }
@@ -201,6 +226,10 @@ body {
   text-decoration: none;
 }
 
+.litte-bold-text {
+  font-weight: 400;
+}
+
 .midle-bold-text {
   font-weight: 500;
 }
@@ -215,6 +244,10 @@ body {
 
 .aling-left {
   text-align: left;
+}
+
+.aling-right {
+  text-align: right;
 }
 
 .line-heigh-generic {
@@ -321,6 +354,10 @@ body {
 
 .generic-middle-max-width {
   max-width: 150px;
+}
+
+.middle-max-width {
+  max-width: 200px;
 }
 
 .big-max-width {
