@@ -76,14 +76,30 @@ body {
   margin: 0;
 }
 
+.margin-center {
+  margin: auto;
+}
+
 /* ---------- PADDINS GENERICS ----------- */
 
 .generic-little-top-padding {
   padding-top: 10px;
 }
 
+.generic-midle-top-padding {
+  padding-top: 20px;
+}
+
+.generic-big-top-padding {
+  padding-top: 40px;
+}
+
 .generic-middle-buttom-padding {
   padding-bottom: 20px;
+}
+
+.very-big-left-padding {
+  padding-left: 60px;
 }
 
 .quit-all-paddins {
@@ -291,7 +307,7 @@ body {
   width: 100%;
 }
 
-.total-half-width {
+.total-three-quarters-width {
   width: 50%;
 }
 
@@ -313,6 +329,10 @@ body {
 
 .very-big-max-width {
   max-width: 550px;
+}
+
+.hiper-big-max-width {
+  width: 800px;
 }
 
 .fit-content-width {
