@@ -12,6 +12,7 @@ body {
   --icons-generic-inputs-color: #828282;
   --footer-background-color: #EBEBEB;
   --facebook-container-color: #475993;
+  --inbox-background-color: #FEE2654E;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -98,6 +99,14 @@ body {
   margin-top: 10px;
 }
 
+.middle-bottom-margin {
+  margin-bottom: 20px;
+}
+
+.big-margin-bottom {
+  margin-bottom: 40px;
+}
+
 .quit-margin-top {
   margin-top: 0;
 }
@@ -154,6 +163,10 @@ body {
 
 .put-all-middle-big-padding {
   padding: 20px 25px;
+}
+
+.put-all-big-padding {
+  padding: 40px 45px;
 }
 
 .little-padding-bottom {
@@ -220,6 +233,10 @@ body {
 
 .background-facebook-color {
   background-color: var(--facebook-container-color);
+}
+
+.inbox-background-color {
+  background-color: var(--inbox-background-color);
 }
 
 .filter-background-dark {
