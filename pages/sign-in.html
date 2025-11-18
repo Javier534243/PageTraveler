@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing in</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b51cd60f76.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="flex generic-midle-top-padding very-big-left-padding">
+      <div class="conatiner-logo flex litte-gap aling-center third-title-size">
+        <i class="fa-solid fa-plane-up blue-color-generic icon-plane"></i>
+        <span class="midle-bold-text">my Dream Place</span>
+      </div>
+    </nav>
+    <main
+      class="flex justify-content-center aling-center flex-direction-column height-80vh margin-center very-big-max-width"
+    >
+      <h1>Sign in</h1>
+      <form action="/index.html" class="flex flex-direction-column normal-gap">
+        <div class="flex flex-direction-column litte-gap">
+          <label class="flex flex-direction-column aling-left title-generic-color" for="email"
+            >Email address
+          </label>
+          <div class="input-generic-background-color input-generic-background-color put-all-middle-padding generic-border-radius">
+            <input id="email" type="email" class="total-width input-generic-background-color quit-borders quit-outline" />
+          </div>
+          <label class="aling-left title-generic-color" for="password">Password </label>
+          <div class="flex aling-items-center normal-gap input-generic-background-color put-all-middle-padding generic-border-radius">
+            <input id="password" type="password" class="total-width input-generic-background-color quit-borders quit-outline" />
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="flex justify-content-space-between">
+          <div>
+            <label class="flex flex-direction-row-reverse generic-color-inputs-text litte-gap" for="/index.html"
+              >Keep me signed in
+              <input class="scale-up" type="checkbox" />
+            </label>
+          </div>
+          <a
+            href="#"
+            class="remove-underline blue-color-generic"
+            target="_blank"
+            >Forgot password?</a
+          >
+        </div>
+        <button>Continue with email</button>
+      </form>
+    </main>
+  </body>
+</html>
