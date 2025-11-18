@@ -11,6 +11,7 @@ body {
   --white-color-text: #ffffff;
   --icons-generic-inputs-color: #828282;
   --footer-background-color: #EBEBEB;
+  --facebook-container-color: #475993;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -143,6 +144,10 @@ body {
   padding: 15px 20px;
 }
 
+.put-all-middle-big-padding {
+  padding: 20px 25px;
+}
+
 .generic-separate-secions {
   padding-bottom: 40px;
 }
@@ -201,6 +206,10 @@ body {
   background-color: var(--footer-background-color);
 }
 
+.background-facebook-color {
+  background-color: var(--facebook-container-color);
+}
+
 .filter-background-dark {
   background-color: #0004;
 }
@@ -233,6 +242,10 @@ body {
 }
 
 /* ---- SPECIFIC TEXT STYLES ---- */
+
+.font-family-principal {
+  font-family: "SF Pro Display", sans-serif;
+}
 
 .remove-underline {
   text-decoration: none;
@@ -290,6 +303,14 @@ body {
 
 .quit-borders {
   border: none;
+}
+
+.border-top-gray-light {
+  border-top: 1px solid var(--input-background-generic-color);
+}
+
+.border-gray {
+  border: 1px solid var(--icons-generic-inputs-color);
 }
 
 /* ---------- LOGO STYLES ------------- */
@@ -360,6 +381,10 @@ body {
   max-width: 100%;
 }
 
+.max-width-icon {
+  max-width: 30px;
+}
+
 .generic-little-max-width {
   max-width: 100px;
 }
@@ -376,6 +401,10 @@ body {
   max-width: 300px;
 }
 
+.sub-big-max-width {
+  max-width: 450px;
+}
+
 .very-big-max-width {
   max-width: 550px;
 }
@@ -388,10 +417,15 @@ body {
   width: fit-content;
 }
 
+
 /* ----------- HEIGHT STYLES ------------- */
 
 .total-height {
   height: 100%;
+}
+
+.height-1px {
+  height: 1px;
 }
 
 .height-100vh {
