@@ -91,12 +91,20 @@ body {
   margin-top: -40px;
 }
 
+.negative-margin-bottom {
+  margin-bottom: -40px;
+}
+
 .little-margins-vertical {
   margin: 10px 0;
 }
 
 .little-top-margin {
   margin-top: 10px;
+}
+
+.middle-top-margin {
+  margin-top: 20px;
 }
 
 .middle-bottom-margin {
@@ -106,6 +114,10 @@ body {
 .big-margin-bottom {
   margin-bottom: 40px;
 }
+
+.big-margin-top {
+  margin-top: 40px;
+} 
 
 .quit-margin-top {
   margin-top: 0;
@@ -245,6 +257,10 @@ body {
 
 .filter-background-dark-linear {
   background: linear-gradient(to left, #000a, transparent);
+}
+
+.bacground-color-gradient-blue {
+  background: linear-gradient(to bottom, #2969BF, #144E9D);
 }
 
 
@@ -451,7 +467,7 @@ body {
 }
 
 .fit-content-width {
-  width: fit-content;
+  max-width: fit-content;
 }
 
 
@@ -471,6 +487,10 @@ body {
 
 .height-80vh {
   height: 80vh;
+}
+
+.height-20vh {
+  height: 20vh;
 }
 
 .height-auto {

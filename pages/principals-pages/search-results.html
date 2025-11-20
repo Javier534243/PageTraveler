@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b51cd60f76.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+  </head>
+  <body class="flex justify-content-center aling-items-center quit-all-margins">
+    <div class="container">
+      <header class="header">
+        <div class="height-20vh bacground-color-gradient-blue">
+            <nav class="justify-content-space-between aling-items-center flex wrap principal-paddings">
+                <div class="conatiner-logo flex litte-gap aling-center">
+                  <i class="fa-solid fa-plane-up text-color-white icon-plane"></i>
+                  <span class="midle-bold-text text-color-white">my Dream Place</span>
+                </div>
+                <div>
+                  <ul class="flex quit-point normal-gap quit-all-paddins">
+                    <li><a href="#" class="text-generic-color remove-underline text-color-white">Home</a></li>
+                    <li><a href="#" class="text-generic-color remove-underline text-color-white">Discover</a></li>
+                    <li><a href="#" class="text-generic-color remove-underline text-color-white">Activities</a></li>
+                    <li><a href="#" class="text-generic-color remove-underline text-color-white">About</a></li>
+                    <li><a href="#" class="text-generic-color remove-underline text-color-white">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="nav-bottons middle-top-margin quit-all-margins">
+                  <ul class="flex aling-items-center quit-point normal-gap quit-all-paddins">
+                    <li>
+                      <img src="/img/main-img/campanilla-blanca-icono.png" alt="imagen capanilla" class="icon-size">
+                    </li>
+                    <li>
+                      <img src="/img/main-img/imagen-profile.png" alt="imagen perfil" class="max-width-big-icon border-radius-circle aspect-ratio-rectangular-down object-fit-cover">
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="negative-margin-top">
+            <form action="pages/principals-pages/search-results.html" class="flex litte-gap justify-content-center aling-items-center put-all-middle-padding basic-shadow generic-border-radius wrap background-color-white fit-content-width margin-center">
+            <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
+              <i class="fa-solid fa-location-dot generic-icons-color-inputs "></i>
+              <input type="text" placeholder="Where are you going?" class="quit-borders input-generic-background-color quit-outline font-family-principal ">
+            </label>
+            <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
+              <i class="fa-solid fa-calendar-days generic-icons-color-inputs "></i>
+              <input type="text" placeholder="Check in date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal ">
+            </label>
+            <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
+              <i class="fa-solid fa-calendar-days generic-icons-color-inputs"></i>
+              <input type="text" placeholder="Check out date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal ">
+            </label>
+            <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap">
+              <i class="fa-solid fa-user generic-icons-color-inputs"></i>
+              <input type="text" placeholder="Guests" class="quit-borders input-generic-background-color generic-middle-width quit-outline font-family-principal ">
+            </label>
+            <button class="header-search-container put-all-middle-padding blue-generic-color text-color-white generic-border-radius buttons-borders special-button-width font-family-principal">
+              Search
+            </button>
+          </form>
+        </div>
+      </header>
+      <main class="principal-paddings big-margin-top">
+        <div class="flex">
+            <div class="">
+                <form action="">
+                    <div>
+                        <h3>Search by property name</h3>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="eg. Beach westpalm">
+                        </div>
+                    </div>
+                    <h2>Filter by</h2>
+                    <div>
+                        <h3>Your budget per day</h3>
+                        <ul>
+                            <li>
+                                <div>
+                                    <label for="">$ 0 - $ 200</label>
+                                    <input type="checkbox">
+                                </div>
+                                <span>200</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="">$ 200 - $ 500</label>
+                                    <input type="checkbox">
+                                </div>
+                                <span>100</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="">$ 500 - $ 1,000</label>
+                                    <input type="checkbox">
+                                </div>
+                                <span>15</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="">$ 1,000 - $ 2,000</label>
+                                    <input type="checkbox">
+                                </div>
+                                <span>12</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="">$ 2,000 - $ 5,000</label>
+                                    <input type="checkbox">
+                                </div>
+                                <span>230</span>
+                            </li>
+                            <li>
+                                <p>Set your own budget</p>
+                                <img src="/img/main-img/imagen-switch-search.png" alt="imagen switch">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Rating</h3>
+                        <div>
+                            <span>Show only ratings more than</span>
+                            <ul>
+                                <li>
+                                    <span>1</span>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <span>2</span>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <span>3</span>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <span>4</span>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <li>
+                                    <span>5</span>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Popular Filters</h3>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Free cancellation</span>
+                                    </div>
+                                    <span>200</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Spa</span>
+                                    </div>
+                                    <span>100</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Beach front</span>
+                                    </div>
+                                    <span>15</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Hot tub/ jacuzzi</span>
+                                    </div>
+                                    <span>12</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Book without credit card</span>
+                                    </div>
+                                    <span>230</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>No prepayment</span>
+                                    </div>
+                                    <span>12</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Activities</h3>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Fishing</span>
+                                    </div>
+                                    <span>200</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Hiking</span>
+                                    </div>
+                                    <span>100</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Beach</span>
+                                    </div>
+                                    <span>15</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Cycling</span>
+                                    </div>
+                                    <span>12</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Sauna</span>
+                                    </div>
+                                    <span>230</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox">
+                                        <span>Night lights</span>
+                                    </div>
+                                    <span>12</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="">
+
+            </div>
+        </div>
+        <div class="generic-separate-secions">
+          <div class="flex aling-items-center litte-gap wrap background-light-yellow generic-border-radius put-all-middle-padding">
+            <i class="fa-solid fa-triangle-exclamation generic-color-inputs-text generic-icon-size"></i>
+            <p class="text-generic-color">Check the latest COVID-19 restrictions before you travel.</p>
+            <a href="#" class="remove-underline blue-color-generic">Learn more</a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="generic-separate-secions aling-center">
+          <h2 class="second-title-size title-generic-color">Explore the world with My Dream place</h2>
+          <a href="#" class="remove-underline blue-color-generic">Discover new places and experiences</a>
+        </div>
+        <div class="generic-separate-secions principal-paddings">
+          <ul class="flex justify-content-space-between quit-point wrap litte-gap quit-all-paddins">
+            <li>
+              <div class="conatiner-logo flex litte-gap aling-center third-title-size ">
+                <i class="fa-solid fa-plane-up blue-color-generic icon-plane "></i>
+                <span class="midle-bold-text">my Dream Place</span>
+              </div>
+              <p class="generic-color-inputs-text midle-left-padding middle-max-width line-heigh-generic">Your next goto companion for travel</p>
+            </li>
+            <li>
+              <h3 class="big-bold-text quit-margin-top">Company</h3>
+              <ul class="quit-point quit-all-paddins line-heigh-generic">
+                <li><a href="#" class="generic-color-inputs-text remove-underline">About</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Jobs</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Newsroom</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Advertising</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Contact us</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="big-bold-text quit-margin-top">Explore</h3>
+              <ul class="quit-point quit-all-paddins line-heigh-generic">
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Australia</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">New Zealand</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">United States America (USA)</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Greece</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Maldives</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Singapore</a></li>
+                <li><a href="#" class="blue-color-generic remove-underline">See more</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="big-bold-text quit-margin-top">Terms and Policies</h3>
+              <ul class="quit-point quit-all-paddins line-heigh-generic">
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Privacy Policy</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Terms of use</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Acessibility</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Reward system policy</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="big-bold-text quit-margin-top">Help</h3>
+              <ul class="quit-point quit-all-paddins line-heigh-generic">
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Support</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Cancel your bookings</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Use Coupon</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">Refund Policies</a></li>
+                <li><a href="#" class="generic-color-inputs-text remove-underline">International Travel Documents</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="flex aling-items-center background-footer-color justify-content-end super-huge-right-padding litte-gap generic-color-inputs-text">
+          <i class="fa-solid fa-copyright litte-bold-text"></i>
+          <p class="litte-bold-text">my Dream Place 2022</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
