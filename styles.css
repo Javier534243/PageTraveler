@@ -13,6 +13,7 @@ body {
   --footer-background-color: #EBEBEB;
   --facebook-container-color: #475993;
   --inbox-background-color: #FEE2654E;
+  --border-color-form: #E0E0E0;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -119,6 +120,10 @@ body {
   margin-top: 40px;
 } 
 
+.quit-margin-bottom {
+  margin-bottom: 0;
+}
+
 .quit-margin-top {
   margin-top: 0;
 }
@@ -167,6 +172,14 @@ body {
 
 .quit-all-paddins {
   padding: 0;
+}
+
+.quit-padding-bottom {
+  padding-bottom: none;
+}
+
+.put-all-little-padding {
+  padding: 5px 10px;
 }
 
 .put-all-middle-padding {
@@ -278,8 +291,12 @@ body {
   font-size: clamp(12px, 1.5vw, 22px);
 }
 
+.fourth-title-size {
+  font-size: clamp(12px, 1.2vw, 18px);
+}
+
 .text-generic-size {
-  font-size: clamp(10px, 1.2vw, 18px)
+  font-size: clamp(10px, 1.2vw, 16px)
 }
 
 .generic-icon-size {
@@ -324,6 +341,10 @@ body {
   line-height: 1.5;
 }
 
+.line-height-large {
+  line-height: 2;
+}
+
 /* -------- STYLES LISTS -------- */
 
 .quit-point {
@@ -346,6 +367,11 @@ body {
   border-radius: 5px;
 }
 
+.generci-border-radius-top {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
 .border-radius-circle {
   border-radius: 50%;
 }
@@ -354,12 +380,34 @@ body {
   border: none;
 }
 
+.quit-border-bottom {
+  border-bottom: none;
+}
+
+.quit-border-radius-bottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.quit-border-radius-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .border-top-gray-light {
   border-top: 1px solid var(--input-background-generic-color);
 }
 
 .border-gray {
   border: 1px solid var(--icons-generic-inputs-color);
+}
+
+.border-input-form {
+  border: 1px solid var(--border-color-form);
+}
+
+.border-input-form-bottom {
+  border-bottom: 1px solid var(--border-color-form);
 }
 
 /* ---------- LOGO STYLES ------------- */
@@ -422,7 +470,7 @@ body {
   width: 100%;
 }
 
-.total-three-quarters-width {
+.total-half-width {
   width: 50%;
 }
 
@@ -433,6 +481,10 @@ body {
 .max-width-icon {
   max-width: 30px;
 }
+
+.width-icon {
+  width: 30px;
+} 
 
 .max-width-big-icon {
   max-width: 50px;
@@ -495,6 +547,10 @@ body {
 
 .height-auto {
   height: auto;
+}
+
+.height-fit-content {
+  height: fit-content;
 }
 
 .little-max-height {
@@ -579,4 +635,8 @@ body {
 .baner-section {
   background-image: url(img/img-index/background-image-baner-01.jpg);
   height: 320px;
+}
+
+.especial-padding-form {
+  padding: 20px 20px 0 20px;
 }

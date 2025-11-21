@@ -21,7 +21,7 @@
                   <span class="midle-bold-text text-color-white">my Dream Place</span>
                 </div>
                 <div>
-                  <ul class="flex quit-point normal-gap quit-all-paddins">
+                  <ul class="flex quit-point normal-gap quit-all-paddins quit-point">
                     <li><a href="#" class="text-generic-color remove-underline text-color-white">Home</a></li>
                     <li><a href="#" class="text-generic-color remove-underline text-color-white">Discover</a></li>
                     <li><a href="#" class="text-generic-color remove-underline text-color-white">Activities</a></li>
@@ -66,185 +66,187 @@
         </div>
       </header>
       <main class="principal-paddings big-margin-top">
-        <div class="flex">
-            <div class="">
-                <form action="">
+        <div class="flex normal-gap">
+            <form action="">
+                <div class="generic-border-radius put-all-middle-padding input-generic-background-color">
+                    <h3 class="title-generic-color fourth-title-size">Search by property name</h3>
+                    <label for="search">
+                      <div class="put-all-middle-padding flex litte-gap aling-center aling-items-center white-background-color border-input-form generic-border-radius">
+                        <i class="fa-solid fa-magnifying-glass generic-color-inputs-text"></i>
+                        <input type="search" type="text" placeholder="eg. Beach westpalm" class="generic-border-radius quit-borders quit-outline" id="search">
+                      </div>
+                    </label>
+                </div>
+                <h2 class="third-title-size">Filter by</h2>
+                <div class="generic-border-radius border-input-form">
+                    <h3 class="put-all-middle-padding input-generic-background-color title-generic-color fourth-title-size quit-all-margins generci-border-radius-top border-input-form-bottom">Your budget per day</h3>
+                    <ul class="quit-all-margins quit-point line-height-large especial-padding-form">
+                        <li class="flex justify-content-space-between">
+                            <div class="flex flex-direction-row-reverse litte-gap">
+                                <label for="">$ 0 - $ 200</label>
+                                <input type="checkbox" class="width-icon">
+                            </div>
+                            <span>200</span>
+                        </li>
+                        <li class="flex justify-content-space-between">
+                            <div class="flex flex-direction-row-reverse litte-gap">
+                                <label for="" class="">$ 200 - $ 500</label>
+                                <input type="checkbox" class="width-icon">
+                            </div>
+                            <span>100</span>
+                        </li>
+                        <li class="flex justify-content-space-between">
+                            <div class="flex flex-direction-row-reverse litte-gap">
+                                <label for="">$ 500 - $ 1,000</label>
+                                <input type="checkbox" class="width-icon">
+                            </div>
+                            <span>15</span>
+                        </li>
+                        <li class="flex justify-content-space-between">
+                            <div class="flex flex-direction-row-reverse litte-gap">
+                                <label for="">$ 1,000 - $ 2,000</label>
+                                <input type="checkbox" class="width-icon">
+                            </div>
+                            <span>12</span>
+                        </li>
+                        <li class="flex justify-content-space-between">
+                            <div class="flex flex-direction-row-reverse litte-gap">
+                                <label for="">$ 2,000 - $ 5,000</label>
+                                <input type="checkbox" class="width-icon">
+                            </div>
+                            <span>230</span>
+                        </li>
+                        <li class="flex justify-content-space-between aling-items-center">
+                            <p>Set your own budget</p>
+                            <img src="/img/main-img/switch-form-icon.png" alt="imagen switch" class="max-width-big-icon height-fit-content ">
+                        </li>
+                    </ul>
+                  </div>
+                  <div>
                     <div>
-                        <h3>Search by property name</h3>
-                        <div>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="eg. Beach westpalm">
-                        </div>
+                      <h3>Rating</h3>
+                    <div>
+                      <span>Show only ratings more than</span>
+                      <ul>
+                        <li>
+                            <span>1</span>
+                            <i class="fa-solid fa-star"></i>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <i class="fa-solid fa-star"></i>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <i class="fa-solid fa-star"></i>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <i class="fa-solid fa-star"></i>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <i class="fa-solid fa-star"></i>
+                        </li>
+                      </ul>
+                      </div>
                     </div>
-                    <h2>Filter by</h2>
                     <div>
-                        <h3>Your budget per day</h3>
+                        <h3>Popular Filters</h3>
                         <ul>
                             <li>
                                 <div>
-                                    <label for="">$ 0 - $ 200</label>
                                     <input type="checkbox">
+                                    <span>Free cancellation</span>
                                 </div>
                                 <span>200</span>
                             </li>
                             <li>
                                 <div>
-                                    <label for="">$ 200 - $ 500</label>
                                     <input type="checkbox">
+                                    <span>Spa</span>
                                 </div>
                                 <span>100</span>
                             </li>
                             <li>
                                 <div>
-                                    <label for="">$ 500 - $ 1,000</label>
                                     <input type="checkbox">
+                                    <span>Beach front</span>
                                 </div>
                                 <span>15</span>
                             </li>
                             <li>
                                 <div>
-                                    <label for="">$ 1,000 - $ 2,000</label>
                                     <input type="checkbox">
+                                    <span>Hot tub/ jacuzzi</span>
                                 </div>
                                 <span>12</span>
                             </li>
                             <li>
                                 <div>
-                                    <label for="">$ 2,000 - $ 5,000</label>
                                     <input type="checkbox">
+                                    <span>Book without credit card</span>
                                 </div>
                                 <span>230</span>
                             </li>
                             <li>
-                                <p>Set your own budget</p>
-                                <img src="/img/main-img/imagen-switch-search.png" alt="imagen switch">
+                                <div>
+                                    <input type="checkbox">
+                                    <span>No prepayment</span>
+                                </div>
+                                <span>12</span>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h3>Rating</h3>
-                        <div>
-                            <span>Show only ratings more than</span>
-                            <ul>
-                                <li>
-                                    <span>1</span>
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li>
-                                    <span>2</span>
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li>
-                                    <span>3</span>
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li>
-                                    <span>4</span>
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li>
-                                    <span>5</span>
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Popular Filters</h3>
-                            <ul>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Free cancellation</span>
-                                    </div>
-                                    <span>200</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Spa</span>
-                                    </div>
-                                    <span>100</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Beach front</span>
-                                    </div>
-                                    <span>15</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Hot tub/ jacuzzi</span>
-                                    </div>
-                                    <span>12</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Book without credit card</span>
-                                    </div>
-                                    <span>230</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>No prepayment</span>
-                                    </div>
-                                    <span>12</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Activities</h3>
-                            <ul>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Fishing</span>
-                                    </div>
-                                    <span>200</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Hiking</span>
-                                    </div>
-                                    <span>100</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Beach</span>
-                                    </div>
-                                    <span>15</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Cycling</span>
-                                    </div>
-                                    <span>12</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Sauna</span>
-                                    </div>
-                                    <span>230</span>
-                                </li>
-                                <li>
-                                    <div>
-                                        <input type="checkbox">
-                                        <span>Night lights</span>
-                                    </div>
-                                    <span>12</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <h3>Activities</h3>
+                        <ul>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Fishing</span>
+                                </div>
+                                <span>200</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Hiking</span>
+                                </div>
+                                <span>100</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Beach</span>
+                                </div>
+                                <span>15</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Cycling</span>
+                                </div>
+                                <span>12</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Sauna</span>
+                                </div>
+                                <span>230</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Night lights</span>
+                                </div>
+                                <span>12</span>
+                            </li>
+                        </ul>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
             <div class="">
               <h1>Melbourne : 2,582 search results found</h1>
               <div>
@@ -481,7 +483,9 @@
                 </div>
               </div>
             </div>
+          </div>
         </div>
+        <button>Load more results</button>
         <div class="generic-separate-secions">
           <div class="flex aling-items-center litte-gap wrap background-light-yellow generic-border-radius put-all-middle-padding">
             <i class="fa-solid fa-triangle-exclamation generic-color-inputs-text generic-icon-size"></i>
