@@ -14,6 +14,7 @@ body {
   --facebook-container-color: #475993;
   --inbox-background-color: #FEE2654E;
   --border-color-form: #E0E0E0;
+  --color-orange-generic: #F2994A;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -182,6 +183,10 @@ body {
   padding: 5px 10px;
 }
 
+.put-middle-vertcal-padding-and-little-horizontal-padding {
+  padding: 15px 10px;
+}
+
 .put-all-middle-padding {
   padding: 15px 20px;
 }
@@ -228,6 +233,10 @@ body {
 
 .generic-icons-color-inputs {
   color: var(--icons-generic-inputs-color);
+}
+
+.generci-color-orange {
+  color: var(--color-orange-generic);
 }
 
 /* --- BACKGROUND COLOR --- */
@@ -398,12 +407,20 @@ body {
   border-top: 1px solid var(--input-background-generic-color);
 }
 
+.border-top-form {
+  border-top: 1px solid var(--border-color-form);
+}
+
 .border-gray {
   border: 1px solid var(--icons-generic-inputs-color);
 }
 
 .border-input-form {
   border: 1px solid var(--border-color-form);
+}
+
+.border-right-form {
+  border-right: 1px solid var(--border-color-form);
 }
 
 .border-input-form-bottom {
