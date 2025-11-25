@@ -16,6 +16,8 @@ body {
   --border-color-form: #E0E0E0;
   --color-orange-generic: #F2994A;
   --border-gray-color: #BDBDBD;
+  --background-color-red: #EB5757;
+  --background-color-green: #219653;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -236,7 +238,7 @@ body {
   color: var(--icons-generic-inputs-color);
 }
 
-.generci-color-orange {
+.generic-color-orange {
   color: var(--color-orange-generic);
 }
 
@@ -272,6 +274,14 @@ body {
 
 .inbox-background-color {
   background-color: var(--inbox-background-color);
+}
+
+.background-color-red {
+  background-color: var(--background-color-red);
+}
+
+.background-color-green {
+  background-color: var(--background-color-green);
 }
 
 .filter-background-dark {
@@ -510,6 +520,10 @@ body {
   width: 100%;
 }
 
+.three-quarters-width {
+  width: 75%;
+}
+
 .total-half-width {
   width: 50%;
 }
@@ -544,6 +558,10 @@ body {
 
 .big-max-width {
   max-width: 300px;
+}
+
+.big-midle-max-width {
+  max-width: 400px;
 }
 
 .sub-big-max-width {
@@ -593,8 +611,16 @@ body {
   height: fit-content;
 }
 
+.sub-little-max-height {
+  max-height: 220px;
+}
+
 .little-max-height {
   max-height: 250px;
+}
+
+.midle-little-max-height {
+  max-height: 300px;
 }
 
 .midle-max-height {
@@ -637,6 +663,10 @@ body {
 
 .display-block {
   display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
 }
 
 /* ---------- STYLES ROTATE ------------ */
