@@ -18,6 +18,7 @@ body {
   --border-gray-color: #BDBDBD;
   --background-color-red: #EB5757;
   --background-color-green: #219653;
+  --background-color-details: #F4F4F4;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -72,6 +73,10 @@ body {
 
 .aling-items-start {
   align-items: start;
+}
+
+.aling-items-strench {
+  align-items: stretch;
 }
 
 .wrap {
@@ -259,6 +264,10 @@ body {
 }
 
 /* --- BACKGROUND COLOR --- */
+
+.background-color-details {
+  background-color: var(--background-color-details);
+}
 
 .white-background-color {
   background-color: var(--white-color-text);
@@ -627,6 +636,10 @@ body {
   height: 80vh;
 }
 
+.height-80vh {
+  max-height: 80vh;
+}
+
 .height-20vh {
   height: 20vh;
 }
@@ -653,6 +666,10 @@ body {
 
 .midle-max-height {
   max-height: 400px;
+}
+
+.super-big-max-height {
+  max-height: 800px;
 }
 
 /* ------------ SHADOWS ----------------- */
@@ -713,8 +730,7 @@ body {
   transform: scale(1.5);
 }
 
-/* ---------- HOVER STYLES ------------- */
-
+/* ---------- GRID STYLES ------------- */
 
 /* -------------- ESPECIFIC PAGE INDEX --------------- */
 
