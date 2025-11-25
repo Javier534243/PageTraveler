@@ -104,12 +104,20 @@ body {
   margin: 10px 0;
 }
 
+.middle-margins-vertical {
+  margin: 20px 0;
+}
+
 .little-top-margin {
   margin-top: 10px;
 }
 
 .middle-top-margin {
   margin-top: 20px;
+}
+
+.super-little-bottom-margin {
+  margin-bottom: 5px;
 }
 
 .middle-bottom-margin {
@@ -242,6 +250,10 @@ body {
   color: var(--color-orange-generic);
 }
 
+.text-color-red {
+  color: var(--background-color-red);
+}
+
 /* --- BACKGROUND COLOR --- */
 
 .white-background-color {
@@ -282,6 +294,10 @@ body {
 
 .background-color-green {
   background-color: var(--background-color-green);
+}
+
+.background-color-orange {
+  background-color: var(--color-orange-generic);
 }
 
 .filter-background-dark {
@@ -333,6 +349,10 @@ body {
   text-decoration: none;
 }
 
+.very-little-bold-text {
+  font-weight: 300;
+}
+
 .litte-bold-text {
   font-weight: 400;
 }
@@ -363,6 +383,10 @@ body {
 
 .line-height-large {
   line-height: 2;
+}
+
+.cross-out-text {
+  text-decoration: line-through;
 }
 
 /* -------- STYLES LISTS -------- */
