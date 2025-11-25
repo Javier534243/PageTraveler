@@ -148,6 +148,10 @@ body {
   margin: auto;
 }
 
+.margin-center-horizontal {
+ margin: 0 auto;
+}
+
 /* ---------- PADDINS GENERICS ----------- */
 
 .generic-little-top-padding {
