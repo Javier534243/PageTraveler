@@ -95,6 +95,14 @@ body {
   flex-direction: column;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
 /* ----------- MARGINS GENERICS ---------- */
 
 .negative-margin-top {
@@ -664,12 +672,20 @@ body {
   max-height: 250px;
 }
 
+.sub-little-max-height {
+  max-height: 275px;
+}
+
 .midle-little-max-height {
   max-height: 300px;
 }
 
 .midle-max-height {
   max-height: 400px;
+}
+
+.midle-big-max-height {
+  max-height: 600px;
 }
 
 .super-big-max-height {
@@ -741,6 +757,18 @@ body {
 }
 
 /* ---------- GRID STYLES ------------- */
+
+.grid {
+  display: grid;
+}
+
+.grid-template-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-template-rows {
+  grid-template-rows: 300px 300px;
+}
 
 /* -------------- ESPECIFIC PAGE INDEX --------------- */
 
