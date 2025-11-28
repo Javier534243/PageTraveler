@@ -71,20 +71,30 @@
                         <p>2 adults, 1 double bed and 1 twin bed, Non-smoking</p>
                     </div>
                     <div>
-                        <label for="">First name
+                      <div class="flex normal-gap">
+                        <div class="flex flex-direction-column">
+                          <label for="name">First name</label>
+                          <input type="text" id="name">
+                        </div>
+                        <div class="flex flex-direction-column">
+                          <label for="last-name">Last name</label>
+                          <input type="text" id="last-name">
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div class="flex flex-direction-column">
+                          <label for="number">Mobile number</label>
+                          <div class="flex normal-gap">
+                            <div class="flex litte-gap">
+                              <img src="/img/main-img/flag-australia.png" alt="flag australia" class="max-width-icon aspect-ratio-rectangular generic-border-radius">
+                              <select name="mobile" id="number">
+                                <option value="+61">+61</option>
+                              </select>
+                            </div>
                             <input type="text">
-                        </label>
-                        <label for="">Last name
-                            <input type="text">
-                        </label>
-                        <label for="">Mobile number
-                            <select name="" id="">
-                                <option value="australia">
-                                    <img src="/img/main-img/flag-australia.png" alt="flag-australia">
-                                    +61
-                                </option>
-                            </select>
-                        </label>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
                 <div>
