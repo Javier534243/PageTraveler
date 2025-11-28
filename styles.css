@@ -233,6 +233,10 @@ body {
   padding: 15px 10px;
 }
 
+.padding-10px-15px {
+  padding: 10px 15px;
+}
+
 .put-all-middle-padding {
   padding: 15px 20px;
 }
@@ -659,6 +663,9 @@ body {
   max-width: fit-content;
 }
 
+.width-1_2em {
+  width: 1.2em;
+}
 
 /* ----------- HEIGHT STYLES ------------- */
 
@@ -740,6 +747,10 @@ body {
 
 .super-big-max-height {
   max-height: 800px;
+}
+
+.height-1_2em {
+  height: 1.2em;
 }
 
 /* ------------ SHADOWS ----------------- */
