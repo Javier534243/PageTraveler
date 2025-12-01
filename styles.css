@@ -20,6 +20,7 @@ body {
   --background-color-green: #219653;
   --background-color-details: #F4F4F4;
   --color-yelow-text: #FFD723;
+  --background-color-yellow: #F2C94C;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -201,6 +202,10 @@ body {
   padding-bottom: 20px;
 }
 
+.padding-left-20px {
+  padding-left: 20px;
+}
+
 .midle-left-padding {
   padding-left: 30px;
 }
@@ -349,6 +354,10 @@ body {
 
 .background-color-orange {
   background-color: var(--color-orange-generic);
+}
+
+.background-color-yellow {
+  background-color: var(--background-color-yellow);
 }
 
 .filter-background-dark {
@@ -816,6 +825,10 @@ body {
 }
 
 /* ----------- SCALE STYLES ------------ */ 
+
+.scale-double-up {
+  transform: scale(2.5)
+}
 
 .scale-up {
   transform: scale(1.5);
