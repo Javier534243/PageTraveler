@@ -42,35 +42,34 @@
         </div>
         <div>
             <div>
-                <div>
+                <div class="big-margin-bottom">
                     <div class="flex aling-items-center normal-gap blue-generic-color text-color-white put-all-middle-padding generci-border-radius-top ">
-                        <i class="fa-solid fa-shield-cat"></i>
-                        <h2 class="quit-all-margins">Room 1</h2>
-                        <p class="quit-all-margins">2 adults, 1 double bed and 1 twin bed, Non-smoking</p>
+                      <i class="fa-solid fa-shield-cat"></i>
+                      <h2 class="quit-all-margins">Room 1</h2>
+                      <p class="quit-all-margins">2 adults, 1 double bed and 1 twin bed, Non-smoking</p>
                     </div>
-                    <div class="put-all-middle-padding white-background-color">
-                      <div class="flex flex-direction-column normal-gap very-big-max-width">
+                    <div class="put-all-middle-padding white-background-color flex flex-direction-column normal-gap">
+                      <div class="flex flex-direction-column normal-gap three-quarters-width">
                         <div class="flex normal-gap">
-                        <div class="flex flex-direction-column">
-                          <label for="name">First name</label>
-                          <input type="text" id="name" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color">
+                          <div class="flex flex-direction-column total-width ">
+                            <label for="name">First name</label>
+                            <input type="text" id="name" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color">
+                          </div>
+                          <div class="flex flex-direction-column total-width ">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color">
+                          </div>
                         </div>
-                        <div class="flex flex-direction-column">
-                          <label for="last-name">Last name</label>
-                          <input type="text" id="last-name" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color">
-                        </div>
-                      </div>
-                      <div class="flex">
                         <div class="flex flex-direction-column">
                           <label for="number">Mobile number</label>
                           <div class="flex normal-gap">
-                            <div class="flex litte-gap padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color">
+                            <div class="flex litte-gap padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color flex-1">
                               <img src="/img/main-img/flag-australia.png" alt="flag australia" class="max-width-icon aspect-ratio-rectangular generic-border-radius">
                               <select name="mobile" id="number" class="generic-border-radius quit-borders input-generic-background-color">
                                 <option value="+61">+61</option>
                               </select>
                             </div>
-                            <input type="text" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color total-width">
+                            <input type="text" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color flex-4">
                           </div>
                         </div>
                       </div>
@@ -82,7 +81,64 @@
                     </div>
                 </div>
                 <div>
-
+                  <div class="flex aling-items-center normal-gap blue-generic-color text-color-white put-all-middle-padding generci-border-radius-top ">
+                    <i class="fa-regular fa-window-maximize"></i>
+                    <h2 class="quit-all-margins">Payment options</h2>
+                  </div>
+                  <div class="flex background-color-white">
+                    <span class="put-all-middle-padding hover-details-line text-generic-color">
+                      Overview
+                    </span>
+                    <span class="put-all-middle-padding hover-details-line text-generic-color"">
+                      Rooms
+                    </span>
+                    <span class="put-all-middle-padding hover-details-line text-generic-color"">
+                      Guest Reviews
+                    </span>
+                  </div>
+                  <div class="put-all-middle-padding white-background-color flex flex-direction-column normal-gap">
+                    <div class="flex flex-direction-column normal-gap three-quarters-width">
+                      <div class="flex aling-items-center litte-gap">
+                        <div>
+                          <img src="/img/main-img/imagen-payment-01.png" alt="imagen 01" class="max-width-big-icon aspect-ratio-super-rectangular">
+                        </div>
+                        <div>
+                          <img src="/img/main-img/imagen-payment-02.png" alt="imagen 02" class="max-width-big-icon object-fit-cover height-auto">
+                        </div>
+                        <div>
+                          <img src="/img/main-img/imagen-payment-03.png" alt="imagen 03" class="max-width-big-icon object-fit-cover height-auto">
+                        </div>
+                        <div>
+                          <img src="/img/main-img/imagen-payment-04.png" alt="imagen 04" class="max-width-big-icon object-fit-cover height-auto">
+                        </div>
+                      </div>
+                      <div class="flex flex-direction-column total-width ">
+                        <label for="name">Name on card</label>
+                        <input type="text" id="name" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color">
+                      </div>
+                      <div class="flex flex-direction-column total-width ">
+                        <label for="name">Debit/Credit card number</label>
+                        <input type="text" id="name" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color">
+                      </div>
+                      <div class="flex flex-direction-column">
+                        <label for="number">Mobile number</label>
+                        <div class="flex normal-gap">
+                          <div class="flex litte-gap padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color flex-1">
+                            <img src="/img/main-img/flag-australia.png" alt="flag australia" class="max-width-icon aspect-ratio-rectangular generic-border-radius">
+                            <select name="mobile" id="number" class="generic-border-radius quit-borders input-generic-background-color">
+                              <option value="+61">+61</option>
+                            </select>
+                          </div>
+                          <input type="text" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color flex-4">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex aling-items-center litte-gap">
+                      <input type="checkbox" id="recive-alerts" class="width-1_2em height-1_2em">
+                      <label for="recive-alerts">Receive text alerts about this trip.</label>
+                    </div>
+                    </div>
+                  </div>
                 </div>
                 <div>
 

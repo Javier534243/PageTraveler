@@ -108,6 +108,10 @@ body {
   flex: 2;
 }
 
+.flex-4 {
+  flex: 4;
+}
+
 /* ----------- MARGINS GENERICS ---------- */
 
 .negative-margin-top {
