@@ -697,6 +697,10 @@ body {
   width: 800px;
 }
 
+.max-width-1000px {
+  max-width: 1000px;
+}
+
 .fit-content-width {
   max-width: fit-content;
 }
