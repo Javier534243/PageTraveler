@@ -634,7 +634,11 @@ body {
 
 .width-icon {
   width: 30px;
-} 
+}
+
+.width-40px {
+  width: 40px;
+}
 
 .max-width-big-icon {
   max-width: 50px;
@@ -720,6 +724,10 @@ body {
 
 .height-fit-content {
   height: fit-content;
+}
+
+.height-40px {
+  height: 40px;
 }
 
 .super-little-max-height {
