@@ -365,6 +365,10 @@ body {
   background-color: var(--color-light-green);
 }
 
+.background-color-black01 {
+  background-color: var(--text-generic-color);
+}
+
 .filter-background-dark {
   background-color: #0004;
 }
@@ -555,6 +559,18 @@ body {
 
 .border-color-gray-light {
   border: 1px solid var(--border-gray-color);
+}
+
+.border-left-gray-light {
+  border-left: 1px solid var(--border-color-form);
+}
+
+.border-right-gray-light {
+  border-right: 1px solid var(--border-color-form);
+}
+
+.border-bottom-gray-light {
+  border-bottom: 1px solid var(--border-color-form);
 }
 
 /* ---------- LOGO STYLES ------------- */
