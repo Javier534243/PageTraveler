@@ -21,6 +21,7 @@ body {
   --background-color-details: #F4F4F4;
   --color-yelow-text: #FFD723;
   --background-color-yellow: #F2C94C;
+  --color-light-green: #85E0AB;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -358,6 +359,10 @@ body {
 
 .background-color-yellow {
   background-color: var(--background-color-yellow);
+}
+
+.backgroun-light-green {
+  background-color: var(--color-light-green);
 }
 
 .filter-background-dark {
