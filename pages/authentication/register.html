@@ -5,14 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
     <link rel="stylesheet" href="/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/b51cd60f76.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.cdnfonts.com/css/sf-pro-display"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/b51cd60f76.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
   </head>
   <body>
     <nav class="flex generic-midle-top-padding very-big-left-padding">
@@ -21,34 +15,34 @@
         <span class="midle-bold-text">my Dream Place</span>
       </div>
     </nav>
-    <main
-      class="flex justify-content-center aling-center flex-direction-column height-80vh margin-center sub-big-max-width "
-    >
-      <h1>Register</h1>
-      <form action="/index.html" class="flex flex-direction-column normal-gap">
-        <div class="flex flex-direction-column">
+    <main class="flex justify-content-center aling-center flex-direction-column height-80vh margin-center sub-big-max-width">
+      <h1 class="big-margin-bottom">Register</h1>
+      <form action="/index.html" class="flex flex-direction-column gap-30px">
+        <div class="flex flex-direction-column gap-5px">
           <label class="flex flex-direction-column aling-left title-generic-color" for="email">Email address</label>
-          <div class="input-generic-background-color input-generic-background-color put-all-middle-padding generic-border-radius little-top-margin">
-            <input id="email" type="email" class="total-width input-generic-background-color quit-borders quit-outline" required/>
+          <div class="input-generic-background-color input-generic-background-color put-all-middle-padding generic-border-radius">
+            <input id="email" type="email" class="total-width input-generic-background-color quit-borders quit-outline" required />
           </div>
         </div>
         <button class="text-color-white blue-generic-color put-all-middle-padding generic-border-radius buttons-borders text-generic-size">Continue with email</button>
-        <div class="flex justify-content-space-between aling-items-center litte-gap">
-          <hr class="total-width quit-borders height-1px border-top-gray-light generic-little-max-width input-generic-background-color little-margins-vertical">
-          <span class="fit-content-width generic-color-inputs-text ">or use one of these options</span>
-          <hr class="total-width quit-borders height-1px border-top-gray-light generic-little-max-width input-generic-background-color little-margins-vertical">
+        <div class="flex justify-content-space-between aling-items-center">
+          <hr class="total-width quit-borders height-1px border-top-gray-light flex-1 input-generic-background-color little-margins-vertical" />
+          <span class="total-width generic-color-inputs-text flex-2">or use one of these options</span>
+          <hr class="total-width quit-borders height-1px border-top-gray-light flex-1 input-generic-background-color little-margins-vertical" />
         </div>
-        <button class="flex aling-items-center justify-content-center normal-gap normals-paddings-buttons generic-border-radius white-background-color text-generic-size text-generic-color midle-bold-text border-gray">
-          <img src="/img/img-autentification/img-google-register.png" alt="icono de google" class="max-width-icon">
-          Continue with Google
-        </button>
-        <button class="flex aling-items-center justify-content-center normal-gap normals-paddings-buttons generic-border-radius text-generic-size midle-bold-text background-facebook-color text-color-white quit-borders">
-          <i class="fa-brands fa-square-facebook generic-icon-size" style="color: #ffffff;"></i>
-          Continue with Facebook
-        </button>
-        <div class="flex litte-gap justify-content-center text-generic-size generic-big-top-padding">
-          <span class="generic-icons-color-inputs">Already have an account?</span>
-          <a href="/pages/authentication/sign-in.html" class="remove-underline blue-color-generic">Sign in</a>
+        <div class="flex flex-direction-column litte-gap">
+          <button class="flex aling-items-center justify-content-center normal-gap normals-paddings-buttons generic-border-radius white-background-color text-generic-size text-generic-color midle-bold-text border-input-form">
+            <img src="/img/img-autentification/img-google-register.png" alt="icono de google" class="max-width-icon" />
+            Continue with Google
+          </button>
+          <button class="flex aling-items-center justify-content-center normal-gap normals-paddings-buttons generic-border-radius text-generic-size midle-bold-text background-facebook-color text-color-white quit-borders">
+            <i class="fa-brands fa-square-facebook generic-icon-size text-color-white"></i>
+            Continue with Facebook
+          </button>
+          <div class="flex litte-gap justify-content-center text-generic-size generic-big-top-padding">
+            <span class="generic-icons-color-inputs">Already have an account?</span>
+            <a href="/pages/authentication/sign-in.html" class="remove-underline blue-color-generic">Sign in</a>
+          </div>
         </div>
       </form>
     </main>

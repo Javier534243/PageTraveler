@@ -33,7 +33,7 @@ body {
 }
 
 .principal-paddings {
-  padding: 0 40px;
+  padding: 0 70px;
 }
 
 /* -------- TYPES OF FLEX STYLES --------- */
@@ -46,12 +46,20 @@ body {
   gap: 40px;
 }
 
+.gap-30px {
+  gap: 30px;
+}
+
 .normal-gap {
   gap: 20px;
 }
 
 .litte-gap {
   gap: 10px;
+}
+
+.gap-5px {
+  gap: 5px;
 }
 
 .justify-content-space-between {
