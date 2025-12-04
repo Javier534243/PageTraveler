@@ -58,11 +58,11 @@
               <i class="fa-solid fa-user generic-icons-color-inputs"></i>
               <input type="text" placeholder="Guests" class="quit-borders input-generic-background-color generic-middle-width quit-outline font-family-principal" />
             </label>
-            <button class="header-search-container put-all-middle-padding blue-generic-color text-color-white generic-border-radius buttons-borders special-button-width font-family-principal">Search</button>
+            <button class="header-search-container padding-vertical-14px blue-generic-color text-color-white generic-border-radius buttons-borders special-button-width font-family-principal text-generic-size">Search</button>
           </form>
         </div>
       </header>
-      <main class="principal-paddings big-margin-top">
+      <main class="principal-paddings margin-top-80px">
         <div class="flex normal-gap">
           <form action="/">
             <div class="generic-border-radius put-all-middle-padding input-generic-background-color">
@@ -80,7 +80,7 @@
                 <li class="flex justify-content-space-between">
                   <div class="flex flex-direction-row-reverse litte-gap">
                     <label for="price01" class="text-generic-color">$ 0 - $ 200</label>
-                    <input type="checkbox" class="width-icon" id="price01" />
+                    <input type="checkbox" class="width-icon generic-border-radius border-color-gray-light" id="price01" />
                   </div>
                   <span class="text-generic-color">200</span>
                 </li>
@@ -247,34 +247,35 @@
               </div>
             </div>
           </form>
-          <div class="">
-            <h1 class="second-title-size quit-margin-top">Melbourne : 2,582 search results found</h1>
+          <div class="total-width">
+            <h1 class="sub-third-title-size big-bold-text quit-margin-top">Melbourne : 2,582 search results found</h1>
             <div class="flex justify-content-space-between aling-items-center">
               <div>
                 <ul class="flex quit-point quit-all-paddins border-blue generic-border-radius aling-items-center">
-                  <li class="border-right-blue put-middle-vertcal-padding-and-little-horizontal-padding generic-color-inputs-text hover-search border-radius-left">Our top picks</li>
-                  <li class="border-right-blue put-middle-vertcal-padding-and-little-horizontal-padding generic-color-inputs-text hover-search">Hotel and apartments</li>
-                  <li class="border-right-blue put-middle-vertcal-padding-and-little-horizontal-padding generic-color-inputs-text hover-search">Residence</li>
-                  <li class="border-right-blue put-middle-vertcal-padding-and-little-horizontal-padding generic-color-inputs-text hover-search">Resort</li>
-                  <li class="put-middle-vertcal-padding-and-little-horizontal-padding generic-color-inputs-text hover-search border-radius-right">Shared Space</li>
+                  <li class="border-right-blue normals-paddings-buttons generic-color-inputs-text hover-search border-radius-left">Our top picks</li>
+                  <li class="border-right-blue normals-paddings-buttons generic-color-inputs-text hover-search">Hotel and apartments</li>
+                  <li class="border-right-blue normals-paddings-buttons generic-color-inputs-text hover-search">Residence</li>
+                  <li class="border-right-blue normals-paddings-buttons generic-color-inputs-text hover-search">Resort</li>
+                  <li class="normals-paddings-buttons generic-color-inputs-text hover-search border-radius-right">Shared Space</li>
                 </ul>
               </div>
               <div class="flex aling-items-center normal-gap border-color-gray-light generic-border-radius put-all-little-padding">
-                <div class="flex flex-direction-column put-all-little-padding">
-                  <span class="generic-icons-color-inputs midle-bold-text">Sort by</span>
-                  <span class="text-generic-color litte-bold-text">Recommended</span>
+                <div class="flex flex-direction-column gap-5px">
+                  <label for="sort" class="generic-icons-color-inputs midle-bold-text sub-text-size">Sort by</label>
+                  <select name="sort" id="sort" class="quit-borders quit-outline text-generic-size padding-right-40px text-generic-color">
+                    <option value="Recommended" class="text-generic-color litte-bold-text fit-content-width">Recommended</option>
+                  </select>
                 </div>
-                <i class="fa-solid fa-angle-down generic-color-inputs-text put-all-little-padding"></i>
               </div>
             </div>
             <div>
-              <div class="flex aling-items-center border-color-gray-light put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
+              <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
                 <div>
                   <img src="/img/main-img/search-img-01.png" alt="imagen 01" class="total-max-width big-max-width generic-border-radius display-block aspect-ratio-square" />
                 </div>
                 <div class="flex justify-content-space-between total-width position-relative">
                   <div class="flex flex-direction-column big-midle-max-width">
-                    <h3 class="quit-margin-top title-generic-color">Lakeside Motel Warefront</h3>
+                    <h3 class="quit-margin-top title-generic-color third-title-size">Lakeside Motel Warefront</h3>
                     <div class="flex fit-content-width total-width">
                       <div>
                         <i class="fa-solid fa-star generic-color-orange"></i>
@@ -285,8 +286,8 @@
                       </div>
                       <span class="text-generic-color">4.5 (1200 Reviews)</span>
                     </div>
-                    <p class="text-generic-color midle-bold-text super-little-bottom-margin generic-color-inputs-text">Live a little and celbrate with champagne</p>
-                    <p class="text-generic-color quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
+                    <p class="generic-color-inputs-text midle-bold-text super-little-bottom-margin generic-color-inputs-text">Live a little and celbrate with champagne</p>
+                    <p class="generic-color-inputs-text quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
                     <a href="product-details.html" class="put-all-middle-padding blue-generic-color text-color-white generic-border-radius fit-content-width font-family-principal remove-underline">See availability</a>
                   </div>
                   <div class="flex flex-direction-column justify-content-space-between align-items-end justify-content-end">
@@ -305,13 +306,13 @@
                   </div>
                 </div>
               </div>
-              <div class="flex aling-items-center border-color-gray-light put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
+              <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
                 <div>
                   <img src="/img/main-img/search-img-02.png" alt="imagen 02" class="total-max-width big-max-width generic-border-radius display-block aspect-ratio-square" />
                 </div>
                 <div class="flex justify-content-space-between total-width">
                   <div class="flex flex-direction-column big-midle-max-width">
-                    <h3 class="quit-margin-top title-generic-color">Julia Dens Resort</h3>
+                    <h3 class="quit-margin-top title-generic-color third-title-size">Julia Dens Resort</h3>
                     <div class="flex fit-content-width total-width">
                       <div>
                         <i class="fa-solid fa-star generic-color-orange"></i>
@@ -322,8 +323,8 @@
                       </div>
                       <span class="text-generic-color">4.5 (1200 Reviews)</span>
                     </div>
-                    <p class="text-generic-color midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
-                    <p class="text-generic-color quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
+                    <p class="generic-color-inputs-text midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
+                    <p class="generic-color-inputs-text quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
                     <a href="#" class="put-all-middle-padding blue-generic-color text-color-white generic-border-radius fit-content-width font-family-principal remove-underline">See availability</a>
                   </div>
                   <div class="flex flex-direction-column litte-gap aling-right justify-content-end">
@@ -333,13 +334,13 @@
                   </div>
                 </div>
               </div>
-              <div class="flex aling-items-center border-color-gray-light put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
+              <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
                 <div>
                   <img src="/img/main-img/search-img-03.png" alt="imagen 03" class="big-max-width generic-border-radius display-block aspect-ratio-square" />
                 </div>
                 <div class="flex justify-content-space-between total-width position-relative">
                   <div class="flex flex-direction-column big-midle-max-width">
-                    <h3 class="quit-margin-top title-generic-color">Aghnim Scepter Hotel</h3>
+                    <h3 class="quit-margin-top title-generic-color third-title-size">Aghnim Scepter Hotel</h3>
                     <div class="flex fit-content-width total-width">
                       <div>
                         <i class="fa-solid fa-star generic-color-orange"></i>
@@ -350,8 +351,8 @@
                       </div>
                       <span class="text-generic-color">4.5 (1200 Reviews)</span>
                     </div>
-                    <p class="text-generic-color midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
-                    <p class="text-generic-color quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
+                    <p class="generic-color-inputs-text midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
+                    <p class="generic-color-inputs-text quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
                     <a href="#" class="put-all-middle-padding blue-generic-color text-color-white generic-border-radius fit-content-width font-family-principal remove-underline">See availability</a>
                   </div>
                   <div class="flex flex-direction-column align-items-end justify-content-end">
@@ -364,13 +365,13 @@
                   </div>
                 </div>
               </div>
-              <div class="flex aling-items-center border-color-gray-light put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
+              <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
                 <div>
                   <img src="/img/main-img/search-img-04.png" alt="imagen 04" class="big-max-width generic-border-radius display-block aspect-ratio-square" />
                 </div>
                 <div class="flex justify-content-space-between total-width">
                   <div class="flex flex-direction-column big-midle-max-width">
-                    <h3 class="quit-margin-top title-generic-color">Marineford Hotel</h3>
+                    <h3 class="quit-margin-top title-generic-color third-title-size">Marineford Hotel</h3>
                     <div class="flex fit-content-width total-width">
                       <div>
                         <i class="fa-solid fa-star generic-color-orange"></i>
@@ -381,8 +382,8 @@
                       </div>
                       <span class="text-generic-color">4.5 (1200 Reviews)</span>
                     </div>
-                    <p class="text-generic-color midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
-                    <p class="text-generic-color quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
+                    <p class="generic-color-inputs-text midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
+                    <p class="generic-color-inputs-text quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
                     <a href="#" class="put-all-middle-padding blue-generic-color text-color-white generic-border-radius fit-content-width font-family-principal remove-underline">See availability</a>
                   </div>
                   <div class="flex flex-direction-column litte-gap aling-right justify-content-end">
@@ -392,13 +393,13 @@
                   </div>
                 </div>
               </div>
-              <div class="flex aling-items-center border-color-gray-light put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
+              <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
                 <div>
                   <img src="/img/main-img/search-img-05.png" alt="imagen 05" class="big-max-width generic-border-radius display-block aspect-ratio-square" />
                 </div>
                 <div class="flex justify-content-space-between total-width">
                   <div class="flex flex-direction-column big-midle-max-width">
-                    <h3 class="quit-margin-top title-generic-color">Shanghai Open House</h3>
+                    <h3 class="quit-margin-top title-generic-color third-title-size">Shanghai Open House</h3>
                     <div class="flex fit-content-width total-width">
                       <div>
                         <i class="fa-solid fa-star generic-color-orange"></i>
@@ -409,8 +410,8 @@
                       </div>
                       <span class="text-generic-color">4.5 (1200 Reviews)</span>
                     </div>
-                    <p class="text-generic-color midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
-                    <p class="text-generic-color quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
+                    <p class="generic-color-inputs-text midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
+                    <p class="generic-color-inputs-text quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
                     <a href="#" class="put-all-middle-padding blue-generic-color text-color-white generic-border-radius fit-content-width font-family-principal remove-underline">See availability</a>
                   </div>
                   <div class="flex flex-direction-column litte-gap aling-right justify-content-end">
@@ -420,13 +421,13 @@
                   </div>
                 </div>
               </div>
-              <div class="flex aling-items-center border-color-gray-light put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
+              <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
                 <div>
                   <img src="/img/main-img/search-img-06.png" alt="imagen 06" class="big-max-width generic-border-radius display-block aspect-ratio-square" />
                 </div>
                 <div class="flex justify-content-space-between total-width">
                   <div class="flex flex-direction-column big-midle-max-width">
-                    <h3 class="quit-margin-top title-generic-color">Ocean Waves Resort</h3>
+                    <h3 class="quit-margin-top title-generic-color third-title-size">Ocean Waves Resort</h3>
                     <div class="flex fit-content-width total-width">
                       <div>
                         <i class="fa-solid fa-star generic-color-orange"></i>
@@ -437,8 +438,8 @@
                       </div>
                       <span class="text-generic-color">4.5 (1200 Reviews)</span>
                     </div>
-                    <p class="text-generic-color midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
-                    <p class="text-generic-color quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
+                    <p class="generic-color-inputs-text midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
+                    <p class="generic-color-inputs-text quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
                     <a href="#" class="put-all-middle-padding blue-generic-color text-color-white generic-border-radius fit-content-width font-family-principal remove-underline">See availability</a>
                   </div>
                   <div class="flex flex-direction-column litte-gap aling-right justify-content-end">
@@ -448,18 +449,18 @@
                   </div>
                 </div>
               </div>
-              <div class="flex aling-items-center border-color-gray-light put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
+              <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
                 <div>
                   <img src="/img/main-img/search-img-07.png" alt="imagen 07" class="big-max-width generic-border-radius display-block aspect-ratio-square" />
                 </div>
               </div>
-              <div class="flex aling-items-center border-color-gray-light put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
+              <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap">
                 <div>
                   <img src="/img/main-img/search-img-08.png" alt="imagen 08" class="big-max-width generic-border-radius display-block aspect-ratio-square" />
                 </div>
                 <div class="flex justify-content-space-between total-width">
                   <div class="flex flex-direction-column big-midle-max-width">
-                    <h3 class="quit-margin-top title-generic-color">Lakeside Motel Warefront</h3>
+                    <h3 class="quit-margin-top title-generic-color third-title-size">Lakeside Motel Warefront</h3>
                     <div class="flex fit-content-width total-width">
                       <div>
                         <i class="fa-solid fa-star generic-color-orange"></i>
@@ -470,8 +471,8 @@
                       </div>
                       <span class="text-generic-color">4.5 (1200 Reviews)</span>
                     </div>
-                    <p class="text-generic-color midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
-                    <p class="text-generic-color quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
+                    <p class="generic-color-inputs-text midle-bold-text generic-color-inputs-text super-little-bottom-margin">Live a little and celbrate with champagne</p>
+                    <p class="generic-color-inputs-text quit-margin-top line-heigh-generic text-generic-size">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
                     <a href="#" class="put-all-middle-padding blue-generic-color text-color-white generic-border-radius fit-content-width font-family-principal remove-underline">See availability</a>
                   </div>
                   <div class="flex flex-direction-column aling-right litte-gap align-items-end justify-content-end">
@@ -487,8 +488,8 @@
                   </div>
                 </div>
               </div>
-              <div class="flex justify-content-center big-margin-top">
-                <button class="put-all-middle-padding generic-border-radius fit-content-width font-family-principal quit-borders blue-color-generic input-generic-background-color midle-bold-text fourth-title-size">Load more results</button>
+              <div class="flex justify-content-center big-margin-top big-margin-bottom">
+                <button class="put-all-middle-padding generic-border-radius fit-content-width font-family-principal quit-borders blue-color-generic input-generic-background-color midle-bold-text text-generic-size">Load more results</button>
               </div>
             </div>
           </div>

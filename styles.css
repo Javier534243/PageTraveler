@@ -150,7 +150,11 @@ body {
 
 .big-margin-top {
   margin-top: 40px;
-} 
+}
+
+.margin-top-80px {
+  margin-top: 80px;
+}
 
 .super-little-bottom-margin {
   margin-bottom: 5px;
@@ -164,6 +168,9 @@ body {
   margin-bottom: 40px;
 }
 
+.margin-bottom-80px {
+  margin-bottom: 80px;
+}
 
 .quit-margin-bottom {
   margin-bottom: 0;
@@ -227,6 +234,10 @@ body {
   padding-right: 30px;
 }
 
+.padding-right-40px {
+  padding-right: 40px;
+}
+
 .very-big-right-padding {
   padding-right: 60px;
 }
@@ -249,6 +260,10 @@ body {
 
 .put-middle-vertcal-padding-and-little-horizontal-padding {
   padding: 15px 10px;
+}
+
+.padding-vertical-14px {
+  padding: 14px 0;
 }
 
 .padding-10px-15px {
@@ -403,6 +418,10 @@ body {
   font-size: clamp(16px, 2.2vw, 32px);
 }
 
+.sub-third-title-size {
+  font-size: clamp(14px, 1.8vw, 26px);
+}
+
 .third-title-size {
   font-size: clamp(12px, 1.5vw, 22px);
 }
@@ -413,6 +432,10 @@ body {
 
 .text-generic-size {
   font-size: clamp(10px, 1.2vw, 16px)
+}
+
+.sub-text-size {
+  font-size: clamp(8px, 1vw, 14px)
 }
 
 .generic-icon-size {
