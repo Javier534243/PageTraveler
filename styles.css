@@ -955,3 +955,25 @@ body {
 .hover-details-line:hover {
   border-bottom: 3px solid var(--blue-generic-color);
 }
+
+@media (max-width: 1024px) {
+  .wrap-media-1024px {
+    flex-wrap: wrap;
+  }
+  .display-none-media-1024px {
+    display: none;
+  }
+}
+
+@media (max-width: 724px) {
+  .justify-content-center-724px {
+    justify-content: center;
+  }
+
+  .principal-paddings-media-20px {
+    padding: 0 20px;
+  }
+  .text-aling-center-media-724px {
+    text-align: center;
+  }
+}
