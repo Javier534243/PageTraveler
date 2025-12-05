@@ -956,12 +956,21 @@ body {
   border-bottom: 3px solid var(--blue-generic-color);
 }
 
+@media (max-width: 1400px) {
+  .flex-block-1400px {
+    display: block;
+  }
+}
+
 @media (max-width: 1024px) {
   .wrap-media-1024px {
     flex-wrap: wrap;
   }
   .display-none-media-1024px {
     display: none;
+  }
+  .flex-direction-column-1024px {
+    flex-direction: column;
   }
 }
 
@@ -975,5 +984,14 @@ body {
   }
   .text-aling-center-media-724px {
     text-align: center;
+  } 
+  .quit-left-padding-media-724px {
+    padding-left: 0;
+  }
+  .flex-direction-column-724px {
+    flex-direction: column;
+  }
+  .border-none {
+    border: none;
   }
 }
