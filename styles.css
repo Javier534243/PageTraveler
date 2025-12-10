@@ -972,6 +972,9 @@ body {
   .flex-direction-column-1024px {
     flex-direction: column;
   }
+  .total-height-100-precent  {
+    height: 100%;
+  }
 }
 
 @media (max-width: 724px) {
