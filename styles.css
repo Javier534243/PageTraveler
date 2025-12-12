@@ -724,12 +724,16 @@ body {
   max-width: 550px;
 }
 
+.max-width-1000px {
+  max-width: 1000px;
+}
+
 .hiper-big-max-width {
   width: 800px;
 }
 
-.max-width-1000px {
-  max-width: 1000px;
+.max-width-1050px {
+  max-width: 1050px;
 }
 
 .fit-content-width {
