@@ -26,7 +26,7 @@ body {
 
 /* ------------------ GENERIC STYLES ------------------ */
 
-/* ----- GENERIC STRUCTURE PAGE ---- */
+/* ----- GENERIC STRUCTURE PAGE ----- */
 
 .container {
   width: clamp(320px, 100%, 1440px);
