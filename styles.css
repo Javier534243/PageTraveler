@@ -22,6 +22,8 @@ body {
   --color-yelow-text: #FFD723;
   --background-color-yellow: #F2C94C;
   --color-light-green: #85E0AB;
+  background-color: var(--logo-color);
+  margin: 0;
 }
 
 /* ------------------ GENERIC STYLES ------------------ */
@@ -30,6 +32,7 @@ body {
 
 .container {
   width: clamp(320px, 100%, 1440px);
+  background-color: var(--white-color-text);
 }
 
 .principal-paddings {
@@ -186,6 +189,10 @@ body {
 
 .margin-center {
   margin: auto;
+}
+
+.margin-inline-auto {
+  margin-inline: auto;
 }
 
 .margin-center-horizontal {
