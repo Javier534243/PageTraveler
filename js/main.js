@@ -1,0 +1,2 @@
+import {destinacionsDestacades} from "./data"
+
