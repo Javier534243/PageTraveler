@@ -669,6 +669,10 @@ body {
   right: 0;
 }
 
+.right-4px {
+  right: 4px;
+}
+
 /* ------------ WIDTH STYLES ------------- */
 
 .total-width {
