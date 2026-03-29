@@ -5,8 +5,15 @@ checkFocus("#checkInDate-input");
 checkblur("#checkInDate-input");
 checkFocus("#checkOutDate-input");
 checkblur("#checkOutDate-input");
+let lista = ''
+for (const filter of filters) {
+  for (const budgetRange of filter) {
 
-let lista = '';
+  }
+}
+
+
+lista = ''
 for (const sear of searchResultsData.results) {
   lista += `<div id="${sear.hotelId}" class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap flex-direction-column-1024px">
                 <div>
