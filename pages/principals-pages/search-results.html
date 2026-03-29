@@ -49,11 +49,11 @@
             </label>
             <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
               <i class="fa-solid fa-calendar-days generic-icons-color-inputs"></i>
-              <input type="text" placeholder="Check in date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" />
+              <input type="text" placeholder="Check in date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" id="checkInDate-input"/>
             </label>
             <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
               <i class="fa-solid fa-calendar-days generic-icons-color-inputs"></i>
-              <input type="text" placeholder="Check out date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" />
+              <input type="text" placeholder="Check out date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" id="checkOutDate-input" />
             </label>
             <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap">
               <i class="fa-solid fa-user generic-icons-color-inputs"></i>
@@ -68,11 +68,12 @@
           <form action="/">
             <div class="generic-border-radius put-all-middle-padding input-generic-background-color">
               <h3 class="title-generic-color fourth-title-size midle-bold-text">Search by property name</h3>
-              <label for="search"></label>
-              <div class="put-all-middle-padding flex litte-gap aling-center aling-items-center white-background-color border-input-form generic-border-radius">
+              <label for="search">
+                <div class="put-all-middle-padding flex litte-gap aling-center aling-items-center white-background-color border-input-form generic-border-radius">
                 <i class="fa-solid fa-magnifying-glass generic-color-inputs-text"></i>
                 <input type="text" placeholder="eg. Beach westpalm" class="generic-border-radius quit-borders quit-outline" id="search" />
               </div>
+              </label>
             </div>
             <h2 class="third-title-size midle-bold-text text-generic-color">Filter by</h2>
             <div class="generic-border-radius border-input-form">
@@ -269,7 +270,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div id="resultados">
               <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap flex-direction-column-1024px">
                 <div>
                   <img src="/img/main-img/search-img-01.png" alt="imagen 01" class="total-max-width big-max-width generic-border-radius display-block aspect-ratio-square" />

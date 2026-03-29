@@ -1,8 +1,10 @@
 import { destinacionesDestacados, ofertas, hotelesPopulares } from "./data.js";
+import {dqs, checkFocus, checkblur} from "./functions.js"
 
-function dqs(sel) {
-  return document.querySelector(sel);
-}
+checkFocus("#checkInDate-input")
+checkblur("#checkInDate-input")
+checkFocus("#checkOutDate-input")
+checkblur("#checkOutDate-input")
 
 const destinacion = dqs("#destinacionsDestacades");
 let lista = '<ul class="flex quit-all-paddins normal-gap quit-point wrap-media-1024px justify-content-center">';
