@@ -121,6 +121,7 @@ export const searchResultsData = {
       porcentaje: 15,
       descuentoAnyadido: 5,
       pricePerNight: "$130",
+      oldPrice: "$150",
       imagenUrl: "/img/main-img/search-img-01.png",
     },
     {
@@ -204,7 +205,7 @@ export const searchResultsData = {
         "Reimagine a divine escape in the heart of the city with Parkside Conservation, parking and a late checkout. Only include Free cancellation applies",
       pricePerNight: "$300",
       descuentoAnyadido: 10,
-      oldPrice: "$200",
+      oldPrice: "$320",
       imagenUrl: "/img/main-img/search-img-08.png",
     },
   ],
