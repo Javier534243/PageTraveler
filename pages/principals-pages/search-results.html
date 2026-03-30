@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search Results</title>
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="icon" href="../../img/Vector.svg">
+    <link rel="icon" href="../../img/Vector.svg" />
     <script src="https://kit.fontawesome.com/b51cd60f76.js" crossorigin="anonymous"></script>
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
   </head>
@@ -20,12 +20,12 @@
             </a>
             <div>
               <ul class="flex quit-point litte-gap quit-all-paddins wrap">
-              <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">Home</a></li>
-              <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">Discover</a></li>
-              <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">Activities</a></li>
-              <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">About</a></li>
-              <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">Contact</a></li>
-            </ul>
+                <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">Home</a></li>
+                <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">Discover</a></li>
+                <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">Activities</a></li>
+                <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">About</a></li>
+                <li><a href="#" class="text-color-white remove-underline put-all-middle-padding">Contact</a></li>
+              </ul>
             </div>
             <div class="nav-bottons middle-top-margin quit-all-margins">
               <ul class="flex aling-items-center quit-point normal-gap quit-all-paddins">
@@ -40,16 +40,14 @@
           </nav>
         </div>
         <div class="negative-margin-top">
-          <form
-            action="pages/principals-pages/search-results.html"
-            class="flex litte-gap justify-content-center aling-items-center put-all-middle-padding basic-shadow generic-border-radius wrap background-color-white fit-content-width margin-center">
+          <form action="pages/principals-pages/search-results.html" class="flex litte-gap justify-content-center aling-items-center put-all-middle-padding basic-shadow generic-border-radius wrap background-color-white fit-content-width margin-center">
             <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
               <i class="fa-solid fa-location-dot generic-icons-color-inputs"></i>
               <input type="text" placeholder="Where are you going?" class="quit-borders input-generic-background-color quit-outline font-family-principal" />
             </label>
             <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
               <i class="fa-solid fa-calendar-days generic-icons-color-inputs"></i>
-              <input type="text" placeholder="Check in date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" id="checkInDate-input"/>
+              <input type="text" placeholder="Check in date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" id="checkInDate-input" />
             </label>
             <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
               <i class="fa-solid fa-calendar-days generic-icons-color-inputs"></i>
@@ -70,55 +68,22 @@
               <h3 class="title-generic-color fourth-title-size midle-bold-text">Search by property name</h3>
               <label for="search">
                 <div class="put-all-middle-padding flex litte-gap aling-center aling-items-center white-background-color border-input-form generic-border-radius">
-                <i class="fa-solid fa-magnifying-glass generic-color-inputs-text"></i>
-                <input type="text" placeholder="eg. Beach westpalm" class="generic-border-radius quit-borders quit-outline" id="search" />
-              </div>
+                  <i class="fa-solid fa-magnifying-glass generic-color-inputs-text"></i>
+                  <input type="text" placeholder="eg. Beach westpalm" class="generic-border-radius quit-borders quit-outline" id="search" />
+                </div>
               </label>
             </div>
             <h2 class="third-title-size midle-bold-text text-generic-color">Filter by</h2>
             <div class="generic-border-radius border-input-form">
               <h3 class="put-all-middle-padding input-generic-background-color title-generic-color fourth-title-size quit-all-margins generci-border-radius-top border-input-form-bottom midle-bold-text">Your budget per day</h3>
-              <ul class="quit-all-margins quit-point line-height-large especial-padding-form">
-                <li class="flex justify-content-space-between">
-                  <div class="flex flex-direction-row-reverse litte-gap">
-                    <label for="price01" class="text-generic-color">$ 0 - $ 200</label>
-                    <input type="checkbox" class="width-icon generic-border-radius border-color-gray-light" id="price01" />
-                  </div>
-                  <span class="text-generic-color">200</span>
-                </li>
-                <li class="flex justify-content-space-between">
-                  <div class="flex flex-direction-row-reverse litte-gap">
-                    <label for="price02" class="text-generic-color">$ 200 - $ 500</label>
-                    <input type="checkbox" class="width-icon" id="price02" />
-                  </div>
-                  <span class="text-generic-color">100</span>
-                </li>
-                <li class="flex justify-content-space-between">
-                  <div class="flex flex-direction-row-reverse litte-gap">
-                    <label for="price03" class="text-generic-color">$ 500 - $ 1,000</label>
-                    <input type="checkbox" class="width-icon" id="price03" />
-                  </div>
-                  <span class="text-generic-color">15</span>
-                </li>
-                <li class="flex justify-content-space-between">
-                  <div class="flex flex-direction-row-reverse litte-gap">
-                    <label for="price04" class="text-generic-color">$ 1,000 - $ 2,000</label>
-                    <input type="checkbox" class="width-icon" id="price04" />
-                  </div>
-                  <span class="text-generic-color">12</span>
-                </li>
-                <li class="flex justify-content-space-between">
-                  <div class="flex flex-direction-row-reverse litte-gap">
-                    <label for="price05" class="text-generic-color">$ 2,000 - $ 5,000</label>
-                    <input type="checkbox" class="width-icon" id="price05" />
-                  </div>
-                  <span class="text-generic-color">230</span>
-                </li>
-                <li class="flex justify-content-space-between aling-items-center">
+              <div class="especial-padding-form">
+                <ul class="quit-all-margins quit-point line-height-large quit-all-paddins" id="listaBudge">
+                </ul>
+                <div class="flex justify-content-space-between aling-items-center">
                   <p class="text-generic-color">Set your own budget</p>
                   <img src="/img/main-img/switch-form-icon.png" alt="imagen switch" />
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
             <div>
               <div class="big-margin-top border-input-form generic-border-radius">
@@ -152,57 +117,15 @@
               <div class="big-margin-top">
                 <div class="generic-border-radius border-input-form">
                   <h3 class="put-all-middle-padding input-generic-background-color title-generic-color fourth-title-size quit-all-margins generci-border-radius-top border-input-form-bottom midle-bold-text">Popular Filters</h3>
-                  <ul class="quit-all-margins quit-point line-height-large put-all-middle-padding">
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="free" />
-                        <label for="free" class="text-generic-color">Free cancellation</label>
-                      </div>
-                      <span class="text-generic-color">200</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="spa" />
-                        <label for="spa" class="text-generic-color">Spa</label>
-                      </div>
-                      <span class="text-generic-color">100</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="beach" />
-                        <label for="beach" class="text-generic-color">Beach front</label>
-                      </div>
-                      <span class="text-generic-color">15</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="hot" />
-                        <label for="hot" class="text-generic-color">Hot tub/ jacuzzi</label>
-                      </div>
-                      <span class="text-generic-color">12</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="book" />
-                        <label for="book" class="text-generic-color">Book without credit card</label>
-                      </div>
-                      <span class="text-generic-color">230</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="no" />
-                        <label for="no" class="text-generic-color">No prepsayment</label>
-                      </div>
-                      <span class="text-generic-color">12</span>
-                    </li>
+                  <ul class="quit-all-margins quit-point line-height-large put-all-middle-padding" id="popularfilter">
                   </ul>
                 </div>
               </div>
               <div class="big-margin-top">
                 <div class="generic-border-radius border-input-form">
                   <h3 class="put-all-middle-padding input-generic-background-color title-generic-color fourth-title-size quit-all-margins generci-border-radius-top border-input-form-bottom midle-bold-text">Activities</h3>
-                  <ul class="quit-all-margins quit-point line-height-large put-all-middle-padding">
-                    <li class="flex justify-content-space-between">
+                  <ul class="quit-all-margins quit-point line-height-large put-all-middle-padding" id="activities">
+                    <!-- <li class="flex justify-content-space-between">
                       <div class="flex litte-gap">
                         <input type="checkbox" class="width-icon" id="fishing" />
                         <label for="fishing" class="text-generic-color">Fishing</label>
@@ -243,7 +166,7 @@
                         <label for="night" class="text-generic-color">Night lights</label>
                       </div>
                       <span class="text-generic-color">12</span>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -270,9 +193,7 @@
                 </div>
               </div>
             </div>
-            <div id="resultados">
-              
-            </div> 
+            <div id="resultados"></div>
             <div class="flex justify-content-center big-margin-top big-margin-bottom">
               <button class="put-all-middle-padding generic-border-radius fit-content-width font-family-principal quit-borders blue-color-generic input-generic-background-color midle-bold-text text-generic-size">Load more results</button>
             </div>

@@ -6,9 +6,45 @@ checkblur("#checkInDate-input");
 checkFocus("#checkOutDate-input");
 checkblur("#checkOutDate-input");
 let lista = ''
-const e = searchResultsData.query
+let e = searchResultsData.query
 dqs("#containerTitle").innerHTML = `<h1 class="sub-third-title-size big-bold-text quit-margin-top">${e.where} : ${searchResultsData.totalResults} search results found</h1>`
+e = searchResultsData.filters.budgetRanges
+for (let i = 0,j = 1;i < e.length ;i++,j++) {
+  lista += `<li class="flex justify-content-space-between">
+                  <div class="flex flex-direction-row-reverse litte-gap">
+                    <label for="price0${j}" class="text-generic-color">$ ${e[i].min} - $ ${e[i].max}</label>
+                    <input type="checkbox" class="width-icon generic-border-radius border-color-gray-light" id="price0${j}" />
+                  </div>
+                  <span class="text-generic-color">${e[i].count}</span>
+                </li>`
+}
+dqs("#listaBudge").innerHTML = lista
 
+lista = ''
+e = searchResultsData.filters.popularFilters
+for (const popular of e) {
+  lista += `<li class="flex justify-content-space-between">
+                      <div class="flex litte-gap">
+                        <input type="checkbox" class="width-icon" id="${popular.id}" />
+                        <label for="${popular.id}" class="text-generic-color">${popular.label}</label>
+                      </div>
+                      <span class="text-generic-color">${popular.count}</span>
+                    </li>`
+}
+dqs("#popularfilter").innerHTML = lista
+
+lista = ''
+e = searchResultsData.filters.activities
+for (const acti of e){
+  lista += `<li class="flex justify-content-space-between">
+                      <div class="flex litte-gap">
+                        <input type="checkbox" class="width-icon" id="${acti.id}" />
+                        <label for="${acti.id}" class="text-generic-color">${acti.label}</label>
+                      </div>
+                      <span class="text-generic-color">${acti.count}</span>
+                    </li>`
+}
+dqs("#activities").innerHTML = lista
 
 lista = ''
 for (const sear of searchResultsData.results) {
@@ -18,7 +54,7 @@ for (const sear of searchResultsData.results) {
                 </div>
                 <div class="flex justify-content-space-between total-width position-relative">
                   <div class="flex flex-direction-column big-midle-max-width">
-                    <h3 class="quit-margin-top title-generic-color third-title-size">Lakeside Motel Warefront</h3>
+                    <h3 class="quit-margin-top title-generic-color third-title-size">${sear.name}</h3>
                     <div class="flex fit-content-width total-width">
                       <div>
                         <i class="fa-solid fa-star generic-color-orange"></i>
