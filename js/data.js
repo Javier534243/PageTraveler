@@ -211,7 +211,7 @@ export const searchResultsData = {
   ],
 };
 
-export const width-16px = {
+export const productDetailData = {
   hotel: {
     id: "lakeside-motel-warefront",
     name: "Lakeside Motel Warefront",
