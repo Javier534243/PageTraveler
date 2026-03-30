@@ -60,3 +60,49 @@ for (const explore of e) {
 }
 
 dqs("#explorando").innerHTML = lista
+
+e = productDetailData.promoCard
+lista = `<div class="flex flex-direction-column justify-content-center big-gap middle-max-width">
+                <div class="flex litte-gap third-title-size">
+                  <i class="fa-solid fa-plane-up text-color-white icon-plane"></i>
+                  <span class="midle-bold-text text-color-white">my Dream Place</span>
+                </div>
+                <span class="second-title-size text-color-white midle-bold-text">${e.title}<span class="text-color-yelow jump-line">${e.specialWord}</span></span>
+              </div>
+              <div class="position-relative flex flex-direction-column justify-content-end">
+                <img src="/img/main-img/person-details.png" alt="imagen person" class="position-absolute" />
+              </div>`
+
+dqs("#promoCard").innerHTML = lista
+
+lista = ''
+e = productDetailData.rooms
+for (const room of e) {
+  lista += `<div class="flex-1">
+                <div>
+                  <img src="${room.urlImg}" alt="imagen 0${room.numero}" class="total-width object-fit-cover sub02-little-max-height generci-border-radius-top aspect-ratio-super-rectangular display-block" />
+                </div>
+                <div class="background-color-white put-all-middle-padding generic-border-radius-bottom">
+                  <h3 class="quit-all-margins .litte-bold-text">${room.name}</h3>
+                  <ul class="quit-point generic-color-inputs-text quit-all-paddins line-height-large">
+                    <li class="flex litte-gap aling-items-center">
+                      <i class="fa-solid fa-briefcase blue-color-generic generic-color-inputs-text"></i>
+                      <span>${room.price} sq ft</span>
+                    </li>
+                    <li class="flex litte-gap aling-items-center">
+                      <i class="fa-solid fa-water-ladder blue-color-generic generic-color-inputs-text"></i>
+                      <span>Sleeps ${room.sleeps}</span>
+                    </li>
+                    <li class="flex litte-gap aling-items-center">
+                      <i class="fa-regular fa-thumbs-up blue-color-generic generic-color-inputs-text"></i>
+                      <span>${room.beds}</span>
+                    </li>
+                  </ul>
+                  <a href="/pages/principals-pages/checkout.html" class="put-all-middle-padding blue-generic-color text-color-white generic-border-radius buttons-borders font-family-principal remove-underline total-max-width display-block aling-center"
+                    >Reserve suite</a
+                  >
+                </div>
+              </div>`
+}
+
+dqs("#habitaciones").innerHTML = lista
