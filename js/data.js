@@ -230,11 +230,11 @@ export const productDetailData = {
     { id: "top-rated", label: "Top rated in area" },
   ],
   exploreArea: [
-    { name: "Hotel Pennsylvania", distance: "2 min drive" },
-    { name: "Travis Bakery store house", distance: "10 min drive" },
-    { name: "Olivia Johnson Garden", distance: "15 min drive" },
-    { name: "Norman Opera Circus", distance: "18 min drive" },
-    { name: "Rockdesert hotel", distance: "32 min drive" },
+    { name: "Hotel Pennsylvania", distance: "2 min drive", icon: "plane-up", style: "icon-plane"},
+    { name: "Travis Bakery store house", distance: "10 min drive", icon: "location-dot" },
+    { name: "Olivia Johnson Garden", distance: "15 min drive", icon: "location-dot" },
+    { name: "Norman Opera Circus", distance: "18 min drive", icon: "location-dot" },
+    { name: "Rockdesert hotel", distance: "32 min drive", icon: "location-dot" },
   ],
   availability: {
     checkin: "Mar 18, 2022",

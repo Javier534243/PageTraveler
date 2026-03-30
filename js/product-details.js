@@ -37,3 +37,26 @@ lista += `<h1 class="quit-margin-top title-generic-color">${e.name}</h1>
 dqs("#hoteles").innerHTML = lista
 
 lista = ""
+e = productDetailData.topFacilities
+for (const fali of e){
+  lista += `<li class="flex litte-gap aling-items-center fit-content-width">
+                    <img src="../../img/icons/${fali.id}.svg"></img>
+                    <span class="generic-color-inputs-text">${fali.label}</span>
+                  </li>`
+}
+
+dqs("#facilidades").innerHTML = lista
+
+lista = ''
+e = productDetailData.exploreArea
+for (const explore of e) {
+  lista += `<li class="flex justify-content-space-between">
+                  <div class="flex litte-gap aling-items-center">
+                    <i class="fa-solid fa-${explore.icon} ${explore.style === "icon-plane" ? "icon-plane" : ''} width-16px"></i>
+                    <span>${explore.name}</span>
+                  </div>
+                  <span>${explore.distance}</span>
+                </li>`
+}
+
+dqs("#explorando").innerHTML = lista
