@@ -499,6 +499,10 @@ body {
   text-decoration: line-through;
 }
 
+.jump-line {
+  white-space: pre-line;
+}
+
 /* -------- STYLES LISTS -------- */
 
 .quit-point {

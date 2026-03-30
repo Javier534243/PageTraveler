@@ -1,8 +1,8 @@
-import { productDetailData } from "./data.js";
-import { dqs } from "./functions.js";
+import { productDetailData } from "./data.js"
+import { dqs } from "./functions.js"
 
-let lista = "";
-let e = productDetailData.hotel;
+let lista = ""
+let e = productDetailData.hotel
 lista += `<h1 class="quit-margin-top title-generic-color">${e.name}</h1>
                 <div class="flex fit-content-width total-width">
                   <div>
@@ -27,13 +27,13 @@ lista += `<h1 class="quit-margin-top title-generic-color">${e.name}</h1>
                   <div class="generic-middle-buttom-padding border-input-form-bottom">
                     <div class="put-all-middle-padding">
                       <h3 class="title-generic-color midle-bold-text">Overview</h3>
-                      <p class="generic-color-inputs-text line-heigh-generic">
+                      <p class="generic-color-inputs-text line-heigh-generic jump-line">
                         ${e.overviewText}
                       </p>
                     </div>
                   </div>
-                </div>`;
+                </div>`
 
-dqs("#hoteles").innerHTML = lista;
+dqs("#hoteles").innerHTML = lista
 
-lista = "";
+lista = ""
