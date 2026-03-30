@@ -695,6 +695,10 @@ body {
   max-width: 30px;
 }
 
+.width-16px {
+  width: 16px;
+}
+
 .width-icon {
   width: 30px;
 }
