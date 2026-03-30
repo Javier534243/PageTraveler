@@ -6,11 +6,8 @@ checkblur("#checkInDate-input");
 checkFocus("#checkOutDate-input");
 checkblur("#checkOutDate-input");
 let lista = ''
-for (const filter of filters) {
-  for (const budgetRange of filter) {
-
-  }
-}
+const e = searchResultsData.query
+dqs("#containerTitle").innerHTML = `<h1 class="sub-third-title-size big-bold-text quit-margin-top">${e.where} : ${searchResultsData.totalResults} search results found</h1>`
 
 
 lista = ''
