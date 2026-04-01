@@ -53,3 +53,8 @@ hoteles.innerHTML = lista;
 dqs("#imagen-menu").addEventListener("click", function () {
   dqs("#menu").classList.toggle("display-hidden")
 });
+
+dqs("#start").addEventListener("click", function() {
+  dqs("#ventana-modal").classList.add("display-hidden")
+  dqs("body").classList.remove("over-flow-hidden")
+})

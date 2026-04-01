@@ -359,6 +359,10 @@ body {
   background-color: var(--blue-generic-color);
 }
 
+.blue-light-background {
+  background-color: #8bf;
+}
+
 .input-generic-background-color {
   background-color: var(--input-background-generic-color);
 }
