@@ -9,7 +9,12 @@
     <script src="https://kit.fontawesome.com/b51cd60f76.js" crossorigin="anonymous"></script>
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
   </head>
-  <body class="flex justify-content-center aling-items-center quit-all-margins">
+  <body class="flex justify-content-center aling-items-center quit-all-margins position-relative over-flow-hidden">
+    <div class="height-100vh position-absolute right-0 left-0 bottom-0 top-0 z-index-increase-2 total-width total-height filter-background-dark">
+      <div class="total-width big-midle-max-width white-background-color position-absolute right-0 left-0 bottom-0 top-0 z-index-increase-3 sub-midle-max-height margin-center">
+        
+      </div>
+    </div>
     <div class="container">
       <header class="header principal-paddings generic-separate-secions">
         <nav class="justify-content-space-between aling-items-center flex wrap">
@@ -31,8 +36,28 @@
               <li>
                 <img src="/img/main-img/capanilla-icono.png" alt="imagen capanilla" class="icon-size" />
               </li>
-              <li>
-                <img src="/img/main-img/imagen-profile.png" alt="imagen perfil" class="max-width-big-icon border-radius-circle aspect-ratio-rectangular-down object-fit-cover" />
+              <li class="position-relative">
+                <img src="/img/main-img/imagen-profile.png" alt="imagen perfil" class="max-width-big-icon border-radius-circle aspect-ratio-rectangular-down object-fit-cover cursor-pointer" id="imagen-menu" />
+                <div class="white-background-color border-radius-10px basic-shadow padding-block-10px position-absolute z-index-increase right-0 min-width-200px display-hidden" id="menu">
+                  <ul class="quit-point quit-all-paddins">
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/user.svg" />
+                      <span>Manage account</span>
+                    </li>
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/airplane.svg" />
+                      <span>My trips</span>
+                    </li>
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/wallet.svg" />
+                      <span>Reward and wallet</span>
+                    </li>
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/logout.svg" />
+                      <span>Sign out</span>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
@@ -52,11 +77,11 @@
             </label>
             <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
               <i class="fa-solid fa-calendar-days generic-icons-color-inputs"></i>
-              <input type="text" placeholder="Check in date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" id="checkInDate-input"  />
+              <input type="text" placeholder="Check in date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" id="checkInDate-input" />
             </label>
             <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap flex-propieties">
               <i class="fa-solid fa-calendar-days generic-icons-color-inputs"></i>
-              <input type="text" placeholder="Check out date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" id="checkOutDate-input"  />
+              <input type="text" placeholder="Check out date" class="quit-borders input-generic-background-color generic-little-max-width quit-outline font-family-principal" id="checkOutDate-input" />
             </label>
             <label class="header-search-container put-all-middle-padding input-generic-background-color generic-border-radius flex litte-gap">
               <i class="fa-solid fa-user generic-icons-color-inputs"></i>
@@ -64,7 +89,8 @@
             </label>
             <a
               href="/pages/principals-pages/search-results.html"
-              class="header-search-container put-all-middle-padding blue-generic-color text-color-white generic-border-radius buttons-borders special-button-width font-family-principal remove-underline aling-center quit-borders">
+              class="header-search-container put-all-middle-padding blue-generic-color text-color-white generic-border-radius buttons-borders special-button-width font-family-principal remove-underline aling-center quit-borders"
+            >
               Search
             </a>
           </form>
@@ -115,8 +141,7 @@
           <div>
             <h2 class="second-title-size title-generic-color">Popular hotels</h2>
           </div>
-          <div id="section-hoteles-populares">
-          </div>
+          <div id="section-hoteles-populares"></div>
         </section>
         <section class="generic-separate-secions">
           <div class="baner-section background-size-cover generic-border-radius flex aling-items-center justify-content-space-between rotate-reverse flex-direction-row-reverse over-flow-hidden position-relative text-aling-center-media-724px">
@@ -194,6 +219,6 @@
         </div>
       </footer>
     </div>
-    <script src="../../js/main.js" type="module"></script>
+    <script src="../../js/principal-page.js" type="module"></script>
   </body>
 </html>

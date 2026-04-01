@@ -1,10 +1,10 @@
 import { destinacionesDestacados, ofertas, hotelesPopulares } from "./data.js";
-import {dqs, checkFocus, checkblur} from "./functions.js"
+import { dqs, checkFocus, checkblur } from "./functions.js";
 
-checkFocus("#checkInDate-input")
-checkblur("#checkInDate-input")
-checkFocus("#checkOutDate-input")
-checkblur("#checkOutDate-input")
+checkFocus("#checkInDate-input");
+checkblur("#checkInDate-input");
+checkFocus("#checkOutDate-input");
+checkblur("#checkOutDate-input");
 
 const destinacion = dqs("#destinacionsDestacades");
 let lista = '<ul class="flex quit-all-paddins normal-gap quit-point wrap-media-1024px justify-content-center">';
@@ -44,8 +44,12 @@ for (const hotel of hotelesPopulares) {
                 <img src="${hotel.imagenUrl}" alt="${hotel.nombre}" class="total-max-width midle-max-height total-width" />
                 <h3 class="little-margins-vertical title-generic-color third-title-size">${hotel.nombre}</h3>
                 <p class="quit-all-margins text-generic-size">${hotel.propiedadesCount} properties</p>
-              </li>`
+              </li>`;
 }
 
 lista += "</ul>";
 hoteles.innerHTML = lista;
+
+dqs("#imagen-menu").addEventListener("click", function () {
+  dqs("#menu").classList.toggle("display-hidden")
+});
