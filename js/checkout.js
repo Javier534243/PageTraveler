@@ -54,3 +54,36 @@ dqs("#policy").innerHTML = lista
 dqs("#imagen-menu").addEventListener("click", function () {
   dqs("#menu").classList.toggle("display-hidden")
 });
+
+function mostrarIcono(check) {
+  if (dqs(check).classList.contains("display-hidden")) {
+    dqs(check).classList.remove("display-hidden")
+  }
+  
+}
+
+function ocultarIcono(check) {
+  if (!dqs(check).classList.contains("display-hidden")) {
+    dqs(check).classList.add("display-hidden")
+  }
+}
+
+dqs("#button-submit").addEventListener("click", function(e) {
+  e.preventDefault()
+  if (dqs("#name-card").value) {
+    mostrarIcono("#check01")
+  } else {
+    ocultarIcono("#check02")
+  }
+  if(dqs("#debit").value) {
+    mostrarIcono("#check02")
+  } else {
+    ocultarIcono("#check03")
+  }
+  mostrarIcono("#check03")
+  if (dqs("#security").value && dqs("#zip").value) {
+    mostrarIcono("#check04")
+  } else {
+    ocultarIcono("#check04")
+  }
+})

@@ -123,15 +123,21 @@
                       <img src="/img/main-img/imagen-payment-04.png" alt="imagen 04" class="max-width-big-icon object-fit-cover height-auto scale-double-up" />
                     </div>
                   </div>
-                  <div class="flex flex-direction-column total-width">
+                  <div class="flex flex-direction-column total-width" id="fila01">
                     <label for="name-card">Name on card</label>
-                    <input type="text" id="name-card" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color" />
+                    <div class="flex aling-items-center normal-gap">
+                      <input type="text" id="name-card" class="total-width padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color" />
+                      <div class="display-hidden" id="check01"><img src="../../img/icons/check.svg" /></div>
+                    </div>
                   </div>
-                  <div class="flex flex-direction-column total-width">
+                  <div class="flex flex-direction-column total-width" id="fila02">
                     <label for="debit">Debit/Credit card number</label>
-                    <input type="text" id="debit" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color" />
+                    <div class="flex aling-items-center normal-gap">
+                      <input type="number" id="debit" class="total-width padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color" />
+                      <div class="display-hidden" id="check02"><img src="../../img/icons/check.svg" /></div>
+                    </div>
                   </div>
-                  <div class="flex align-items-end litte-gap">
+                  <div class="flex align-items-end litte-gap" id="fila03">
                     <div class="flex flex-direction-column middle-max-width total-width">
                       <label for="expirate">Expiration Date</label>
                       <select name="expirate" id="expirate" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color middle-max-width">
@@ -143,16 +149,18 @@
                         <option value="2026">2026</option>
                       </select>
                     </div>
+                    <div class="display-hidden" id="check03"><img src="../../img/icons/check.svg" /></div>
                   </div>
-                  <div class="flex align-items-end litte-gap">
+                  <div class="flex align-items-end litte-gap" id="fila04">
                     <div class="flex flex-direction-column total-width">
                       <label for="security">Security Code</label>
-                      <input type="text" id="security" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color" />
+                      <input type="number" id="security" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color" />
                     </div>
                     <div class="flex flex-direction-column total-width">
                       <label for="zip">Billing Zip code</label>
-                      <input type="text" id="zip" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color" />
+                      <input type="number" id="zip" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color" />
                     </div>
+                    <div class="display-hidden" id="check04"><img src="../../img/icons/check.svg" /></div>
                   </div>
                 </div>
               </div>
@@ -171,7 +179,7 @@
                   and Terms of Use.
                 </p>
                 <div class="middle-bottom-margin">
-                  <a href="#" class="put-all-middle-padding text-color-white generic-border-radius blue-generic-color remove-underline">Complete Booking</a>
+                  <button type="submit" class="put-all-middle-padding text-color-white generic-border-radius blue-generic-color quit-borders cursor-pointer" id="button-submit">Complete Booking</button>
                 </div>
                 <div class="flex aling-items-center normal-gap">
                   <div class="flex background-color-green text-color-white border-radius-circle justify-content-center aling-items-center width-40px height-40px">
@@ -202,7 +210,7 @@
                       <label for="cupon" class="little-margins-vertical">Coupon code</label>
                       <input type="text" id="cupon" class="padding-10px-15px generic-border-radius quit-borders quit-outline input-generic-background-color" />
                     </div>
-                    <button class="padding-10px-15px text-color-white generic-border-radius background-color-black01 quit-borders height-fit-content fit-content-width">Apply Coupon</button>
+                    <button type="submit" class="padding-10px-15px text-color-white generic-border-radius background-color-black01 quit-borders height-fit-content fit-content-width">Apply Coupon</button>
                   </div>
                 </div>
               </div>
