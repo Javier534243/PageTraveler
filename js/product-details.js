@@ -111,3 +111,8 @@ for (const room of e) {
 }
 
 dqs("#habitaciones").innerHTML = lista
+
+
+dqs("#imagen-menu").addEventListener("click", function () {
+  dqs("#menu").classList.toggle("display-hidden")
+})

@@ -32,8 +32,28 @@
                 <li>
                   <img src="/img/main-img/campanilla-blanca-icono.png" alt="imagen capanilla" class="icon-size" />
                 </li>
-                <li>
-                  <img src="/img/main-img/imagen-profile.png" alt="imagen perfil" class="max-width-big-icon border-radius-circle aspect-ratio-rectangular-down object-fit-cover" />
+                <li class="position-relative">
+                  <img src="/img/main-img/imagen-profile.png" alt="imagen perfil" class="max-width-big-icon border-radius-circle aspect-ratio-rectangular-down object-fit-cover cursor-pointer" id="imagen-menu" />
+                  <div class="white-background-color border-radius-10px basic-shadow padding-block-10px position-absolute z-index-increase right-0 min-width-200px display-hidden" id="menu">
+                    <ul class="quit-point quit-all-paddins">
+                      <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                        <img src="../../img/icons/user.svg" />
+                        <span>Manage account</span>
+                      </li>
+                      <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                        <img src="../../img/icons/airplane.svg" />
+                        <span>My trips</span>
+                      </li>
+                      <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                        <img src="../../img/icons/wallet.svg" />
+                        <span>Reward and wallet</span>
+                      </li>
+                      <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                        <img src="../../img/icons/logout.svg" />
+                        <span>Sign out</span>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -77,8 +97,7 @@
             <div class="generic-border-radius border-input-form">
               <h3 class="put-all-middle-padding input-generic-background-color title-generic-color fourth-title-size quit-all-margins generci-border-radius-top border-input-form-bottom midle-bold-text">Your budget per day</h3>
               <div class="especial-padding-form">
-                <ul class="quit-all-margins quit-point line-height-large quit-all-paddins" id="listaBudge">
-                </ul>
+                <ul class="quit-all-margins quit-point line-height-large quit-all-paddins" id="listaBudge"></ul>
                 <div class="flex justify-content-space-between aling-items-center">
                   <p class="text-generic-color">Set your own budget</p>
                   <img src="/img/main-img/switch-form-icon.png" alt="imagen switch" />
@@ -117,57 +136,13 @@
               <div class="big-margin-top">
                 <div class="generic-border-radius border-input-form">
                   <h3 class="put-all-middle-padding input-generic-background-color title-generic-color fourth-title-size quit-all-margins generci-border-radius-top border-input-form-bottom midle-bold-text">Popular Filters</h3>
-                  <ul class="quit-all-margins quit-point line-height-large put-all-middle-padding" id="popularfilter">
-                  </ul>
+                  <ul class="quit-all-margins quit-point line-height-large put-all-middle-padding" id="popularfilter"></ul>
                 </div>
               </div>
               <div class="big-margin-top">
                 <div class="generic-border-radius border-input-form">
                   <h3 class="put-all-middle-padding input-generic-background-color title-generic-color fourth-title-size quit-all-margins generci-border-radius-top border-input-form-bottom midle-bold-text">Activities</h3>
-                  <ul class="quit-all-margins quit-point line-height-large put-all-middle-padding" id="activities">
-                    <!-- <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="fishing" />
-                        <label for="fishing" class="text-generic-color">Fishing</label>
-                      </div>
-                      <span class="text-generic-color">200</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="hiking" />
-                        <label for="hiking" class="text-generic-color">Hiking</label>
-                      </div>
-                      <span class="text-generic-color">100</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="beach02" />
-                        <label for="beach02" class="text-generic-color">Beach</label>
-                      </div>
-                      <span class="text-generic-color">15</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="cycling" />
-                        <label for="cycling" class="text-generic-color">Cycling</label>
-                      </div>
-                      <span class="text-generic-color">12</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="sauna" />
-                        <label for="sauna" class="text-generic-color">Sauna</label>
-                      </div>
-                      <span class="text-generic-color">230</span>
-                    </li>
-                    <li class="flex justify-content-space-between">
-                      <div class="flex litte-gap">
-                        <input type="checkbox" class="width-icon" id="night" />
-                        <label for="night" class="text-generic-color">Night lights</label>
-                      </div>
-                      <span class="text-generic-color">12</span>
-                    </li> -->
-                  </ul>
+                  <ul class="quit-all-margins quit-point line-height-large put-all-middle-padding" id="activities"></ul>
                 </div>
               </div>
             </div>

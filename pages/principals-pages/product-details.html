@@ -31,8 +31,28 @@
               <li>
                 <img src="/img/main-img/capanilla-icono.png" alt="imagen capanilla" class="icon-size" />
               </li>
-              <li>
-                <img src="/img/main-img/imagen-profile.png" alt="imagen perfil" class="max-width-big-icon border-radius-circle aspect-ratio-rectangular-down object-fit-cover" />
+              <li class="position-relative">
+                <img src="/img/main-img/imagen-profile.png" alt="imagen perfil" class="max-width-big-icon border-radius-circle aspect-ratio-rectangular-down object-fit-cover cursor-pointer" id="imagen-menu" />
+                <div class="white-background-color border-radius-10px basic-shadow padding-block-10px position-absolute z-index-increase right-0 min-width-200px display-hidden" id="menu">
+                  <ul class="quit-point quit-all-paddins">
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/user.svg" />
+                      <span>Manage account</span>
+                    </li>
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/airplane.svg" />
+                      <span>My trips</span>
+                    </li>
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/wallet.svg" />
+                      <span>Reward and wallet</span>
+                    </li>
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/logout.svg" />
+                      <span>Sign out</span>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
@@ -98,8 +118,7 @@
           </div>
           <div class="flex normal-gap middle-top-margin big-margin-bottom">
             <div class="flex-1 put-all-middle-padding flex bacground-color-gradient-light-blue generic-border-radius sub-midle-little-max-height" id="promoCard"></div>
-            <div class="flex normal-gap" id="habitaciones">
-            </div>
+            <div class="flex normal-gap" id="habitaciones"></div>
           </div>
         </div>
         <div class="generic-separate-secions">

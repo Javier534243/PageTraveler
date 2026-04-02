@@ -50,3 +50,7 @@ for (const poli of checkoutData.policyItems){
 }
 
 dqs("#policy").innerHTML = lista
+
+dqs("#imagen-menu").addEventListener("click", function () {
+  dqs("#menu").classList.toggle("display-hidden")
+});

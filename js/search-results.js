@@ -5,6 +5,11 @@ checkFocus("#checkInDate-input");
 checkblur("#checkInDate-input");
 checkFocus("#checkOutDate-input");
 checkblur("#checkOutDate-input");
+
+dqs("#imagen-menu").addEventListener("click", function () {
+  dqs("#menu").classList.toggle("display-hidden")
+});
+
 let lista = ''
 let e = searchResultsData.query
 dqs("#containerTitle").innerHTML = `<h1 class="sub-third-title-size big-bold-text quit-margin-top">${e.where} : ${searchResultsData.totalResults} search results found</h1>`

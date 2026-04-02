@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My trips</title>
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="icon" href="../../img/Vector.svg">
+    <link rel="icon" href="../../img/Vector.svg" />
     <script src="https://kit.fontawesome.com/b51cd60f76.js" crossorigin="anonymous"></script>
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
   </head>
@@ -31,8 +31,28 @@
               <li>
                 <img src="/img/main-img/capanilla-icono.png" alt="imagen capanilla" class="icon-size" />
               </li>
-              <li>
-                <img src="/img/main-img/imagen-profile.png" alt="imagen perfil" class="max-width-big-icon border-radius-circle aspect-ratio-rectangular-down object-fit-cover" />
+              <li class="position-relative">
+                <img src="/img/main-img/imagen-profile.png" alt="imagen perfil" class="max-width-big-icon border-radius-circle aspect-ratio-rectangular-down object-fit-cover cursor-pointer" id="imagen-menu" />
+                <div class="white-background-color border-radius-10px basic-shadow padding-block-10px position-absolute z-index-increase right-0 min-width-200px display-hidden" id="menu">
+                  <ul class="quit-point quit-all-paddins">
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/user.svg" />
+                      <span>Manage account</span>
+                    </li>
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/airplane.svg" />
+                      <span>My trips</span>
+                    </li>
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/wallet.svg" />
+                      <span>Reward and wallet</span>
+                    </li>
+                    <li class="flex normal-gap padding-10px-15px generic-middle-buttom-padding border-input-form-bottom">
+                      <img src="../../img/icons/logout.svg" />
+                      <span>Sign out</span>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
@@ -41,17 +61,14 @@
       <main class="principal-paddings">
         <div class="max-width-1000px margin-center-horizontal height-80vh">
           <h1>My trips</h1>
-          <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap align-items-end background-color-white" id="viajes">
-            
-          </div>
+          <div class="flex aling-items-center border-input-form put-all-middle-padding middle-margins-vertical generic-border-radius normal-gap align-items-end background-color-white" id="viajes"></div>
         </div>
         <section class="generic-separate-secions">
           <div>
             <h2 class="second-title-size title-generic-color">Based on your history</h2>
           </div>
           <div>
-            <ul class="flex quit-all-paddins normal-gap quit-point" id="sugerencias">
-            </ul>
+            <ul class="flex quit-all-paddins normal-gap quit-point" id="sugerencias"></ul>
           </div>
         </section>
         <div class="generic-separate-secions">

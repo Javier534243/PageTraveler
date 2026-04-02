@@ -47,3 +47,7 @@ for(const suge of myTripsData.suggestedDestinations){
 }
 
 dqs("#sugerencias").innerHTML = lista
+
+dqs("#imagen-menu").addEventListener("click", function () {
+  dqs("#menu").classList.toggle("display-hidden")
+});
