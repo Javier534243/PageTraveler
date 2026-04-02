@@ -1,5 +1,10 @@
 import { productDetailData } from "./data.js"
-import { dqs } from "./functions.js"
+import { dqs, checkFocus, checkblur } from "./functions.js"
+
+checkFocus("#checkInDate-input");
+checkblur("#checkInDate-input");
+checkFocus("#checkOutDate-input");
+checkblur("#checkOutDate-input");
 
 let lista = ""
 let e = productDetailData.hotel
