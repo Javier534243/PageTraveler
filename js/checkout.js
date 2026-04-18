@@ -1,55 +1,99 @@
-import { checkoutData } from "./data.js";
+import { cargarDatos } from "./supabaseClient.js";
 import { dqs } from "./functions.js";
 
-let lista = `<h2 class="quit-all-margins fourth-title-size">${checkoutData.room.roomLabel}</h2>
-                  <p class="quit-all-margins">${checkoutData.room.summary}</p>`;
+async function cargarCheckoutHabitacion(data) {
+  const contenedor = dqs("#habitacion");
 
-dqs("#habitacion").innerHTML += lista;
+  const info = data[0]; 
 
-const e = checkoutData.summaryCard
-lista = `<div id="${e.hotelId}">
-                <img src="${e.urlImg}" alt="imagen 05" class="total-width generci-border-radius-top display-block aspect-ratio-square object-fit-cover sub02-little-max-height" />
+  let html = `<h2 class="quit-all-margins fourth-title-size">${info.etiqueta_habitacion}</h2>
+              <p class="quit-all-margins">${info.resumen}</p>`;
+
+  contenedor.innerHTML += html;
+}
+
+cargarDatos(cargarCheckoutHabitacion, 'checkout_habitacion');
+
+
+async function cargarResumenCheckout(data) {
+  const contenedor = dqs("#resumen");
+  if (!contenedor || data.length === 0) return;
+
+  const e = data[0];
+
+  let lista = `<div id="${e.id}">
+                <img src="${e.url_imagen}" alt="${e.hotel_nombre}" class="total-width generci-border-radius-top display-block aspect-ratio-square object-fit-cover sub02-little-max-height" />
               </div>
               <div class="put-all-middle-padding white-background-color flex flex-direction-column normal-gap generic-border-radius-bottom">
-                <h3 class="quit-all-margins title-generic-color">${e.hotelName}</h3>
+                <h3 class="quit-all-margins title-generic-color">${e.hotel_nombre}</h3>
                 <div class="flex fit-content-width total-width middle-bottom-margin">
                   <div>
-                  ${e.rating === 4.5 ? `
+                  ${e.puntuacion == 4.5 ? `
                     <i class="fa-solid fa-star generic-color-orange"></i>
                     <i class="fa-solid fa-star generic-color-orange"></i>
                     <i class="fa-solid fa-star generic-color-orange"></i>
                     <i class="fa-solid fa-star generic-color-orange"></i>
-                    <i class="fa-solid fa-star-half generic-color-orange"></i>
-                  </div>` : ''}
-                  <span class="text-generic-color">${e.rating} (${e.reviewsCount} Reviews)</span>
+                    <i class="fa-solid fa-star-half-stroke generic-color-orange"></i>
+                  ` : ''}
+                  </div>
+                  <span class="text-generic-color">${e.puntuacion} (${e.conteo_reviews} Reviews)</span>
                 </div>
-                <p class="quit-all-margins text-color-red">${e.policy}</p>
-                <p class="quit-all-margins generic-color-inputs-text">Check in: ${e.checkIn}</p>
-                <p class="quit-all-margins generic-color-inputs-text">Check out: ${e.checkOut}</p>
-                <p class="quit-all-margins generic-color-inputs-text">${e.stayNights} night stay</p>
+                <p class="quit-all-margins text-color-red">${e.politica}</p>
+                <p class="quit-all-margins generic-color-inputs-text">Check in: ${e.check_in}</p>
+                <p class="quit-all-margins generic-color-inputs-text">Check out: ${e.check_out}</p>
+                <p class="quit-all-margins generic-color-inputs-text">${e.noches} night stay</p>
               </div>`;
 
-dqs("#resumen").innerHTML = lista
-lista = ''
-for (const it of checkoutData.priceDetails.items) {
-    lista += `<div class="flex justify-content-space-between aling-items-center generic-color-inputs-text">
-                    <p class="quit-all-margins">${it.description}</p>
-                    <span>$ ${it.amount}</span>
-                  </div>`
+  contenedor.innerHTML = lista;
 }
 
-dqs("#objetos").innerHTML = lista
+cargarDatos(cargarResumenCheckout, 'checkout_resumen');
 
-lista = `<span class="big-bold-text third-title-size text-generic-color">${checkoutData.priceDetails.currency}${checkoutData.priceDetails.total}</span>`
+// Función para los conceptos individuales (lista de precios)
+async function cargarPrecioItems(data) {
+  const contenedor = dqs("#objetos");
+  if (!contenedor) return;
 
-dqs("#precio").innerHTML += lista
-
-lista = ''
-for (const poli of checkoutData.policyItems){
-    lista += `<li>${poli}</li>`
+  let html = "";
+  for (const it of data) {
+    html += `<div class="flex justify-content-space-between aling-items-center generic-color-inputs-text">
+                <p class="quit-all-margins">${it.descripcion}</p>
+                <span>$ ${it.monto}</span>
+              </div>`;
+  }
+  contenedor.innerHTML = html;
 }
 
-dqs("#policy").innerHTML = lista
+async function cargarPrecioTotal(data) {
+  const contenedor = dqs("#precio");
+  if (!contenedor || data.length === 0) return;
+
+  const info = data[0]; 
+  let html = `<span class="big-bold-text third-title-size text-generic-color">
+                ${info.moneda}${info.total}
+              </span>`;
+
+  contenedor.innerHTML += html;
+}
+
+cargarDatos(cargarPrecioItems, 'checkout_precio_items');
+cargarDatos(cargarPrecioTotal, 'checkout_precio_total');
+
+
+async function cargarPoliticas(data) {
+  const contenedor = dqs("#policy");
+  if (!contenedor) return;
+
+  let lista = "";
+  for (const poli of data) {
+    lista += `<li>${poli.texto}</li>`;
+  }
+
+  contenedor.innerHTML = lista;
+}
+
+cargarDatos(cargarPoliticas, 'checkout_politicas');
+
 
 dqs("#imagen-menu").addEventListener("click", function () {
   dqs("#menu").classList.toggle("display-hidden")
